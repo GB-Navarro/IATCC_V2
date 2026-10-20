@@ -1,0 +1,1 @@
+For the buyer this strategy involves been long the in-the-money and out-the-money strikes and short at-the-money strike. Unlike the other butterflies constructed with straddles and strangles this is constructed entirely of either puts or calls.

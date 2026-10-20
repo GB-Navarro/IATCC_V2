@@ -1,0 +1,3 @@
+A Bonus Forward is a hedging strategy that involves the purchase of a Knock-Out option and a Knock-In option, and the sale of a Reverse Knock-In option.  The barriers of all three options are set to the same level.
+
+The holder is the buyer of an option until the barrier is reached.  If the barrier is reached, the strategy reverts to a conventional forward at a bonus rate, which can be equal to the current forward rate.  The strategy can be made zero-cost by using the OVML 'Solve For' functionality.

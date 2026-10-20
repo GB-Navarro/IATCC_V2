@@ -1,0 +1,3 @@
+An American Vanilla Call (Put) gives the right but not the obligation to buy (sell) the notional amount of the specified asset at the specified strike price at any point during the lifetime of the option.
+
+For a Call (Put), if the spot rate on the expiry date is greater (less) than the strike and the option has not already been exercised, the option will be exercised at a profit. The option may be exercised at any point during the life of the option.

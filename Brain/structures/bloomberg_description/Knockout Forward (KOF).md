@@ -1,0 +1,1 @@
+This product gives an improved hedge rate to the outright forward; the position has a knock-out barrier positioned in-the-money. If this triggers you are left unhedged.

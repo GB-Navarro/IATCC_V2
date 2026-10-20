@@ -1,0 +1,1 @@
+Generic six leg option strategy.

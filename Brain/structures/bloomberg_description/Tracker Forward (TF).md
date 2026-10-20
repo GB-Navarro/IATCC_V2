@@ -1,0 +1,1 @@
+A tracker forward gives the buyer protection rate for their full hedge amount. They can also benefit from any favourable market movements, dealing at the market rate adjusted by fixed spread. You are either here buying a forward and buying a put or selling a forward and buying a call.

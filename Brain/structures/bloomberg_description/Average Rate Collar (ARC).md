@@ -1,0 +1,1 @@
+Like a risk reversal but constructed with average rate put and calls instead of a vanillas.

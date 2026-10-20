@@ -1,0 +1,3 @@
+A Fader option is a Vanilla option, but its notional is determined at expiry, based on the spot rate's movements over the life of the option.
+
+For a Range Inside (Outside) Fader, notional is accrued each time spot is inside (outside) the upper and lower barrier. A Fade In (Out) option's notional begins at zero (the amount entered into the Notional field) and increases (decreases) at fixing dates if spot is within range.

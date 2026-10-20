@@ -1,0 +1,1 @@
+An accumulator with knockout is a regular accumulator with an American knockout barrier, where the American barrier is continuous for FX, and can also be specified as discreet at discrete fixings when pricing commodities.  If the knockout barrier is hit, the remaining fixings are knocked out, and any notional accumulated up to the knockout date is valid.

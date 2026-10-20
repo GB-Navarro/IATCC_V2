@@ -1,0 +1,1 @@
+An option that provides a predetermined payoff on the expiry date provided that the spot is greater (less) than the strike in the case of a call (put) option and provided that one of the two specified barriers have  been hit during the life of the option.

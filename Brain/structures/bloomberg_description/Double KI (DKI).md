@@ -1,0 +1,3 @@
+An option to buy (sell) the notional amount of the specified asset on the expiry date at the specified strike price provided that the spot hits one of the two specified barrier levels during the life of the option. If the spot does not hit one of the two barriers, the option is never knocked in and expires worthless.
+
+The premium for a Knockin option can be significantly lower than the premium for a similar Vanilla option as there are two possibilities of the option never being knocked in.

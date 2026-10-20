@@ -1,0 +1,3 @@
+A Seagull strategy consists of the purchase of an at-the-money option and the sale of a strangle, where the option and strangle have the same expiration date and usually also have the same notional amount.
+
+The short strangle finances the purchase of the at-the-money option, which makes this strategy a low (or zero) cost position.  The use of the Seagull strategy, with the purchase of an at-the-money call (put), would be appropriate if the trader had a bullish (bearish) market outlook.

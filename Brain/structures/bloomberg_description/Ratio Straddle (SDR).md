@@ -1,0 +1,1 @@
+A ratio straddle consists of simultaneously purchasing a call and put with the same strike price and expiry date.Unlike a Straddle, the strike of the Ratio Straddle is usually Out-of-The-Money (OTM) and the notional on each leg is not the same. The notional of the structure is split between each leg to create the OTM structure with a zero forward delta exposure.

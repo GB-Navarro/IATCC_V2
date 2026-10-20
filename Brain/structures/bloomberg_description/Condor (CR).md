@@ -1,0 +1,3 @@
+The Condor strategy (also called a strangle spread) consists of being long a Strangle and being short another Strangle, ensuring that the interval between the strikes for the short strangle is smaller than the interval between the strikes of the larger strangle.
+
+One would be long a Condor if they thought that the price of the underlying would be stable (volatility would fall), or short a Condor if they thought that the price of the underlying would not be stable (volatility would rise).

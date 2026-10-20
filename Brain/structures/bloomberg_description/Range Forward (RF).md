@@ -1,0 +1,1 @@
+This product allows you to improve your hedge rate. If the range defined holds you trade at a rate better than the current forward, if the range breaks you are locked into a synthetic forward at a rate worse than the initial outright forward rate.

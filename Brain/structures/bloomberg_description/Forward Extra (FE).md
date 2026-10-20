@@ -1,0 +1,3 @@
+A Forward Extra (aka Variance Forward) strategy involves purchasing a vanilla call (put) option and simultaneously selling a Reverse Knock-In put (call) at the same strike. Since it is a Reverse Knock-In, the barrier is hit when the option is moving into-the-money.
+
+At expiration, if the barrier was not hit, the purchaser makes a profit if spot is between strike and barrier and has a fixed P/L for spot anywhere else.

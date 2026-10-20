@@ -1,0 +1,1 @@
+An option that provides a predetermined payoff if the spot does not hit either of the specified barrier levels during the life of the option.

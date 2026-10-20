@@ -1,0 +1,3 @@
+An option to buy (sell) the notional amount of the specified asset on the expiry date at the specified strike price unless the spot hits one of the two specified barrier levels during the life of the option. If spot hits either of the barriers, the option is knocked out and becomes worthless.
+
+The premium for a Knockout option is significantly lower than the premium for a similar Vanilla option as there are two possibilities of the option being knocked out.

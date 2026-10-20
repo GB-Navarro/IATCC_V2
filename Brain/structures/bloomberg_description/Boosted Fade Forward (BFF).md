@@ -1,0 +1,1 @@
+This is an accrual based forward; the amount of notional is accrued each day the fixing is above/ below the pre-defined fade rate (barrier). A leveraged amount can be sold on an out-the-money strike to further improve the strike rate.

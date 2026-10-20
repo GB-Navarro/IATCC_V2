@@ -1,0 +1,3 @@
+The long Butterfly option strategy is created by being long an out-of-the-money Strangle and being short an at-the-money Straddle. The position is built with the same expiration date across all the options.
+
+A long (short) Butterfly is used when the spot price of the underlying asset is expected to move a small (large) amount over the life of the position.  Long (short) Butterfly structures benefit when volatility falls (rises).

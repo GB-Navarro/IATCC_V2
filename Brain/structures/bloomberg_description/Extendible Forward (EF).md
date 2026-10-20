@@ -1,0 +1,1 @@
+This is a forward contract and typically ratioed (participating forward if this is the case). It will be extended for a further period if spot resets above or below a pre-specified barrier at expiry.

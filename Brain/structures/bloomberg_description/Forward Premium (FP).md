@@ -1,0 +1,1 @@
+An option payoff whose premium is paid in the future, typically on the settlement date of the option, rather than spot settlement.

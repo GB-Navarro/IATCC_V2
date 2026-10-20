@@ -1,0 +1,1 @@
+An option that provides a predetermined payoff on the expiry date provided the spot is greater (less) than the strike in the case of a call (put) option.

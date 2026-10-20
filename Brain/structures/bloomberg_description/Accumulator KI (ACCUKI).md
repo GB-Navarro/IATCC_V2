@@ -1,0 +1,1 @@
+An accumulator with knockin is a regular accumulator with an American knockin barrier, where the American barrier is continuous for FX, and can also be specified as discreet at discrete fixings when pricing commodities. Accumulation starts only after the knockin barrier is hit and the remaining fixings then behave like a regular accumulator.

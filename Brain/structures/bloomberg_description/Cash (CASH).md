@@ -1,0 +1,1 @@
+A contract to either pay another party cash or receive cash from another party on the specified delivery date.
