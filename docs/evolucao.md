@@ -4,6 +4,7 @@ Mudanças no sistema, da mais recente para a mais antiga. As decisões estão em
 
 ## 2026-10-20
 
+- Criados `CLAUDE.md`, `scripts/hooks/checar_docs.py` e `.claude/settings.json`, com hooks `Stop` e `SessionStart` para a atualização contínua dos docs (D17).
 - Criado `docs/`, com README, decisões e evolução.
 - Criado `scripts/gerar_notas.py`. Ele gerou 65 notas canônicas em `Brain/structures/` e registrou os hashes dos textos originais (D07, D15, D16).
 - Criados `Brain/_schema.md` e `Brain/_template.md` (D07–D12).

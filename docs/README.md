@@ -39,14 +39,17 @@ DTCC (registros + insumos calculados)       Brain/ (base de conhecimento)
 | `Brain/structures/bloomberg_description/` | texto original do OVML, nunca editado |
 | `Brain/structures/.bloomberg_hashes.json` | hashes dos textos originais, para a validação |
 | `scripts/` | código, fora do vault |
+| `scripts/hooks/checar_docs.py` | detecta mudanças não registradas nos docs |
 | `docs/` | esta documentação |
+| `CLAUDE.md` | regras do projeto e critérios de atualização dos docs, lidos pelo Claude Code em toda sessão |
+| `.claude/settings.json` | hooks `Stop` e `SessionStart`, que rodam o `checar_docs.py` |
 
 ## Como trabalhar na base
 
 1. Na nota, edite só os campos humanos e as seções do corpo, conforme o `_schema.md`.
 2. Nunca edite `bloomberg_description/`. Correções e divergências vão na seção **Notas** da nota canônica.
 3. Ao adicionar um texto da Bloomberg, rode `python scripts/gerar_notas.py`. O script só cria notas novas, nunca sobrescreve, e avisa se algum texto original mudou.
-4. Registre toda decisão nova em [`decisoes.md`](decisoes.md) e toda mudança em [`evolucao.md`](evolucao.md).
+4. Registre toda decisão nova em [`decisoes.md`](decisoes.md) e toda mudança em [`evolucao.md`](evolucao.md). Ao fim de cada resposta e no início de cada sessão, o hook avisa o Claude se algo mudou sem registro, inclusive mudanças feitas por você no Obsidian.
 
 ## Próximos passos
 

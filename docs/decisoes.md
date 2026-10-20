@@ -76,3 +76,12 @@ O código fica em `scripts/`. Os scripts não sobrescrevem notas e não escrevem
 
 ### D16 · 2026-10-20 · aceita — A geração inicial só preenche o mínimo mecânico
 O script preenche só o que sai do nome do arquivo: código, alias, embed e `familia: generica` nas 2L–10L. Nenhuma tabela de pernas foi pré-preenchida, nem a dos exóticos de 1 perna.
+
+### D17 · 2026-10-20 · aceita — Atualização contínua dos docs em três camadas
+- **`CLAUDE.md`**: define o que é mudança relevante e qual doc atualizar.
+- **Hook `Stop`**: ao fim de cada resposta, bloqueia o Claude se `Brain/`, `scripts/`, `CLAUDE.md` ou os hooks mudaram depois da última atualização de `docs/`.
+- **Hook `SessionStart`**: na abertura da sessão, informa o que mudou fora do Claude Code.
+
+O hook cobra uma vez por leva de mudanças (marcador em `docs/.ultima_verificacao`) e ignora `.obsidian/`. O Claude decide se a mudança é relevante e pergunta o motivo quando ela envolve uma decisão do usuário.
+- **Motivo:** detectar mudanças dá para automatizar; interpretar, não. A regra sozinha depende de memória, e o hook sozinho não sabe o que é relevante.
+- **Descartado por ora:** `git init`. Com git, o hook passaria a comparar pelo `git diff`.
