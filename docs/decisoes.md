@@ -85,3 +85,40 @@ O script preenche só o que sai do nome do arquivo: código, alias, embed e `fam
 O hook cobra uma vez por leva de mudanças (marcador em `docs/.ultima_verificacao`) e ignora `.obsidian/`. O Claude decide se a mudança é relevante e pergunta o motivo quando ela envolve uma decisão do usuário.
 - **Motivo:** detectar mudanças dá para automatizar; interpretar, não. A regra sozinha depende de memória, e o hook sozinho não sabe o que é relevante.
 - **Descartado por ora:** `git init`. Com git, o hook passaria a comparar pelo `git diff`.
+
+### D18 · 2026-10-20 · aceita — Base de estruturas antes de qualquer trabalho com o DTCC
+Primeiro a base de estruturas fica completa e validada; nada específico do DTCC por enquanto.
+- **Risco aceito:** o mapeamento dos campos do DTCC para a coluna `instrumento`, e as decisões D02 e D13, ficam sem validação até lá. Se os dados contradisserem o schema, ele é revisado.
+
+### D19 · 2026-10-20 · aceita — As notas são preenchidas a partir dos PDFs das fontes
+As fontes ficam em `fontes/` e cada afirmação da nota cita `chave, p. N`. O rascunho feito de memória só serve de roteiro de leitura.
+- **Fonte principal:** Wystup (2017), que tem a nomenclatura mais próxima do OVML. Hull, Haug e Clark complementam; os artigos gratuitos do Wystup cobrem estruturas específicas.
+- **Quando só há o OVML:** estruturas com nome comercial (SDR, BFW, TF, FP, CASH) citam só o OVML, e a nota registra isso.
+- **Motivo:** citações com página tornam a base verificável e eliminam a revisão de um rascunho escrito de memória.
+
+### D20 · 2026-10-20 · aceita — Haug e Clark ficam fora da lista principal
+O usuário não conseguiu obter os dois livros.
+- **Clark: dispensado.** Reiswich & Wystup (2009) e Wystup (2017) cobrem tudo o que ele traria.
+- **Haug: em espera.** Decide-se depois de ler as seções 1.7.3, 1.7.4 e 1.8.4 do Wystup. Ele só seria necessário para digitais com barreira e barreiras sequenciais.
+- **Revisa** a D19, que listava Haug e Clark como complementares.
+
+### D21 · 2026-10-21 · aceita — Hull na 9ª edição; Haug volta à lista
+- **Hull:** fica a 9ª ed. (2015), que é a obtida, e não a 11ª. Toda citação do Hull se refere à paginação da 9ª.
+- **Haug:** a 2ª ed. foi obtida e cobre digitais com barreira, barreiras duplas e sequenciais. Revisa a D20 nesse ponto; o Clark continua dispensado.
+- **Arquivos de fontes:** nomeados `<chave>_<título-curto>`. A citação usa a página impressa, e o deslocamento em relação ao PDF fica registrado em `fontes/README.md`.
+
+### D22 · 2026-10-21 · aceita — Wystup na 1ª edição; fontes completas
+- **Wystup:** a 1ª ed. (2006) substitui a 2ª. Ela cobre tudo o que buscávamos, exceto o condor; o calendar spread vem do Hull.
+- **Natenberg:** opcional, só para o CR. Sem ele, o CR cita só o OVML.
+- **A leitura resolveu quatro divergências** (detalhes em `fontes/README.md`):
+  - RF do OVML = range forward do Wystup;
+  - FE do OVML = forward *plus* do Wystup;
+  - *bonus forward* do Wystup ≠ BFW do OVML;
+  - KOKI e KIKOSQ = tipos 1 e 2 de KIKO do Wystup.
+
+### D23 · 2026-10-21 · aceita — Natenberg (1994) entra como fonte
+É a edição revisada de 1994, escaneada e sem camada de texto, por isso a leitura é por imagem, a partir das páginas do índice.
+- **CR:** passa a ter fonte acadêmica (p. 158).
+- **BF:** o Natenberg confirma a convenção de long/short (iron butterfly, p. 158).
+- **CP, SD, SN, CS e DS:** ganham uma segunda fonte.
+- **Revisa** a D22 na parte em que o Natenberg era opcional.

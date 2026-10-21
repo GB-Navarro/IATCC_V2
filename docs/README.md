@@ -41,6 +41,7 @@ DTCC (registros + insumos calculados)       Brain/ (base de conhecimento)
 | `scripts/` | código, fora do vault |
 | `scripts/hooks/checar_docs.py` | detecta mudanças não registradas nos docs |
 | `docs/` | esta documentação |
+| `fontes/` | PDFs das fontes (só local) e índice com chaves, edições e cobertura por estrutura |
 | `CLAUDE.md` | regras do projeto e critérios de atualização dos docs, lidos pelo Claude Code em toda sessão |
 | `.claude/settings.json` | hooks `Stop` e `SessionStart`, que rodam o `checar_docs.py` |
 
@@ -53,7 +54,8 @@ DTCC (registros + insumos calculados)       Brain/ (base de conhecimento)
 
 ## Próximos passos
 
-1. Preencher as notas canônicas, nesta ordem:
+0. Fontes completas ([`fontes/README.md`](../fontes/README.md)).
+1. Preencher as notas canônicas a partir das fontes, nesta ordem:
    - combinações de vanillas: CP, RR, SD, SN, SDR, PF, CS, DS, SG, BF, BFC, CR;
    - compostas e forwards estruturados;
    - exóticos de 1 perna.
