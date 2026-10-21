@@ -3,9 +3,7 @@ aliases: ["Average Rate Forward"]
 composta_de: []
 variante_de: []
 flexivel: []
-barreira:
-barreiras:
-payoff:
+payoff: media
 # gerado pelo script — não editar
 tags: []
 instrumentos: []
@@ -19,9 +17,14 @@ ambigua_com: []
 
 | instrumento | tipo | strike | vencimento | notional | lado | moneyness |
 |---|---|---|---|---|---|---|
+| ARF | — | K1 | T1 | 1 | + | — |
+
+| Informação | Valor | Fonte |
+|---|---|---|
+| Composição | forward cujo payoff é a diferença entre o strike e a média do spot num período | [ovml] |
+| Payoff | media | [ovml] |
 
 ## Restrições
 
-## Notas
-
-## Fontes
+- Liquidado em moeda estrangeira, usa o inverso da média, ou seja, a média harmônica [ovml]; [wystup-2006, p. 131].
+- Média geométrica ou liquidação em moeda estrangeira exigem volatilidade no apreçamento [ovml].

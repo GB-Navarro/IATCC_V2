@@ -122,3 +122,27 @@ O usuário não conseguiu obter os dois livros.
 - **BF:** o Natenberg confirma a convenção de long/short (iron butterfly, p. 158).
 - **CP, SD, SN, CS e DS:** ganham uma segunda fonte.
 - **Revisa** a D22 na parte em que o Natenberg era opcional.
+
+### D24 · 2026-10-21 · aceita — Citação em toda afirmação e validação por checklist
+- **Formatos:** `[chave, p. N]` (página impressa), `[ovml]` e `[inferência: …]`. As regras completas estão em `Brain/_schema.md`.
+- **Citação literal:** só nas **Notas** de divergência, com no máximo uma frase. Nos demais lugares vai só a página.
+- **Nova seção Relações:** justifica `composta_de` e `variante_de`, para que todo campo manual tenha citação.
+- **Validação por lote:** `scripts/checklist_citacoes.py` gera `validacao/lote-N.md`, com um item por citação e a página do PDF. O lote conta como validado quando todos os itens estiverem marcados.
+
+### D25 · 2026-10-21 · aceita — Tabela de origem em cada nota
+A linha `Fonte:` foi substituída por uma tabela de origem (`Informação | Valor | Fonte`) logo abaixo da tabela de pernas. Cada informação tem a sua fonte: as colunas da tabela de pernas e os campos manuais do frontmatter.
+- **Seção Relações:** sai. O conteúdo dela vira as linhas Composta de e Variante de.
+- **Marcador `, exemplo`:** separa o que a fonte define do que ela só ilustra num exemplo numérico.
+- **Checklist:** cada afirmação aparece uma vez, com as fontes como sub-itens marcáveis.
+- **Revisa** a D24.
+- **Motivo:** o usuário precisa saber exatamente qual fonte sustenta cada informação para validá-la.
+
+### D26 · 2026-10-21 · proposta — Fontes como notas do Brain
+Criar uma nota por fonte (ex.: `[[hull-2015]]`) com a referência completa. As citações viram links clicáveis e as fontes aparecem no grafo ligadas às estruturas que sustentam.
+- **Adiado:** o usuário quer retomar depois. Não muda a validação, só a navegação e o grafo.
+
+### D27 · 2026-10-21 · aceita — Validação de todos os lotes de uma vez
+Os cinco lotes foram preenchidos antes de começar a validação, que o usuário fará numa única passada (`validacao/README.md`).
+- **Notas com pernas sem tipo informado (BFW, KKF):** a tabela tem uma linha só, com o próprio código como instrumento. A composição fica em `composta_de`, para não inventar os tipos.
+- **Toques (OT, NT, DOT, DNT):** o campo `barreira` registra `ki` quando o toque ativa o pagamento e `ko` quando o cancela.
+- **Risco aceito:** um erro de padrão encontrado na validação pode exigir corrigir várias notas de uma vez.

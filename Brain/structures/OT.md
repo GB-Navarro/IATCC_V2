@@ -1,11 +1,11 @@
 ---
-aliases: ["One Touch"]
+aliases: ["One Touch", "Hit Option"]
 composta_de: []
 variante_de: []
 flexivel: []
-barreira:
-barreiras:
-payoff:
+barreira: ki
+barreiras: 1
+payoff: toque
 # gerado pelo script — não editar
 tags: []
 instrumentos: []
@@ -19,9 +19,15 @@ ambigua_com: []
 
 | instrumento | tipo | strike | vencimento | notional | lado | moneyness |
 |---|---|---|---|---|---|---|
+| OT | — | — | T1 | 1 | + | — |
+
+| Informação | Valor | Fonte |
+|---|---|---|
+| Composição | pagamento fixo se o spot tocar a barreira antes do vencimento | [ovml]; [wystup-2006, p. 50] |
+| Barreira | ki (o toque ativa o pagamento), uma barreira | [ovml]; [wystup-2006, p. 50] |
+| Payoff | toque | [ovml] |
+| Sinônimo | hit option, one-touch digital | [wystup-2006, p. 50] |
 
 ## Restrições
 
-## Notas
-
-## Fontes
+- Em FX, o pagamento padrão é na data de entrega, dois dias úteis após o vencimento; a alternativa é dois dias úteis após o toque [wystup-2006, p. 49].

@@ -22,7 +22,7 @@ DTCC (registros + insumos calculados)       Brain/ (base de conhecimento)
 
 | Etapa | Estado |
 |---|---|
-| Base: schema, template e notas | em andamento: 65 notas criadas, tabelas de pernas vazias |
+| Base: schema, template e notas | 65 notas preenchidas, aguardando validação (`validacao/README.md`) |
 | Gerador e validador de tags | a fazer |
 | Agrupamento DTCC | a fazer |
 | Matching | a fazer |
@@ -40,6 +40,8 @@ DTCC (registros + insumos calculados)       Brain/ (base de conhecimento)
 | `Brain/structures/.bloomberg_hashes.json` | hashes dos textos originais, para a validação |
 | `scripts/` | código, fora do vault |
 | `scripts/hooks/checar_docs.py` | detecta mudanças não registradas nos docs |
+| `scripts/checklist_citacoes.py` | gera o checklist de validação de um lote |
+| `validacao/` | checklists de validação das citações, um por lote |
 | `docs/` | esta documentação |
 | `fontes/` | PDFs das fontes (só local) e índice com chaves, edições e cobertura por estrutura |
 | `CLAUDE.md` | regras do projeto e critérios de atualização dos docs, lidos pelo Claude Code em toda sessão |
@@ -55,25 +57,11 @@ DTCC (registros + insumos calculados)       Brain/ (base de conhecimento)
 ## Próximos passos
 
 0. Fontes completas ([`fontes/README.md`](../fontes/README.md)).
-1. Preencher as notas canônicas a partir das fontes, nesta ordem:
-   - combinações de vanillas: CP, RR, SD, SN, SDR, PF, CS, DS, SG, BF, BFC, CR;
-   - compostas e forwards estruturados;
-   - exóticos de 1 perna.
-2. Registrar as pendências abaixo na seção **Notas** de cada estrutura.
-3. Escrever o gerador e validador de tags (passo 4 do plano).
-4. Agrupamento DTCC, matching, agente e avaliação.
+1. Validar os cinco lotes de uma vez (`validacao/README.md`, 472 citações) e corrigir o que for marcado com ❌.
+2. Escrever o gerador e validador de tags (passo 4 do plano).
+3. Agrupamento DTCC, matching, agente e avaliação.
+4. A decidir depois: fontes como notas do Brain (proposta D26).
 
 ### Pendências conhecidas no texto da Bloomberg
 
-| Nota | Problema |
-|---|---|
-| DKI | A justificativa do prêmio está invertida: duas barreiras dão duas formas de ativar. |
-| KIKOSQ | A redação sobre a ordem das barreiras é ambígua. |
-| DS, CP, CS | O "and/or" do DS engloba CP e CS, e o CP não exige o mesmo vencimento. |
-| BFC | Não cita a razão de notional 1:2:1. |
-| CR | Não diz se vencimento e notional são iguais. |
-| RF | Na Bloomberg é uma estrutura com barreira; na literatura, "range forward" é o collar (RR). |
-| EC | "KI com barreira ITM" é o mesmo que o Reverse KI citado em FE e BFW. |
-| AVG | Uma nota descreve dois produtos (average rate e average strike). |
-| DISEQ | A descrição não tem conteúdo; falta buscar uma fonte. |
-| RR, BF, FWD, FX, FE | O lado ou a perspectiva (comprador/hedger) fica implícito. |
+Todas foram registradas nas **Notas** ou **Restrições** das estruturas afetadas: DKI, KIKOSQ, RF, EC, AVG, DISEQ, FX, FWD e FE.

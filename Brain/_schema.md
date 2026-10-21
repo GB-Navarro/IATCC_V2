@@ -7,7 +7,26 @@ Contrato entre as notas de `structures/`, o script gerador e o agente.
 - Uma nota por estrutura: `structures/<COD>.md` (ex.: `BF.md`), criada a partir de `_template.md`.
 - `structures/bloomberg_description/` é a fonte original: nunca é editada, só embutida.
 - Nome completo e sinônimos ficam em `aliases`.
-- Seções vazias são omitidas. **Restrições**: só o que a tabela não expressa. **Notas**: só divergências da Bloomberg ou conflitos de nome. **Fontes**: `Autor, *Título*, cap.`
+- Seções vazias são omitidas. **Restrições**: só o que a tabela de pernas e a tabela de origem não expressam. **Notas**: só divergências da Bloomberg ou conflitos de nome.
+
+## Citações
+
+Toda afirmação da nota tem citação. A bibliografia fica em `fontes/README.md`.
+
+| Formato | Uso |
+|---|---|
+| `[chave, p. N]` | afirmação tirada da definição de uma fonte, com a página impressa |
+| `[chave, p. N, exemplo]` | afirmação que a fonte só mostra num exemplo numérico |
+| `[ovml]` | afirmação tirada do texto da Bloomberg embutido na nota |
+| `[inferência: …]` | conclusão a partir de premissas, cada uma citada dentro do colchete |
+
+- Logo abaixo da tabela de pernas vem a **tabela de origem** (`| Informação | Valor | Fonte |`), com uma linha por informação. Ela cobre:
+  - as colunas da tabela de pernas;
+  - os campos humanos do frontmatter: `flexivel`, `composta_de`, `variante_de`, `barreira`, `barreiras`, `payoff` e os sinônimos de `aliases`.
+- A coluna Informação usa um vocabulário fixo: Composição, Strikes, Vencimento, Notional, Moneyness, Instrumento, Barreira, Payoff, Flexível, Composta de, Variante de, Sinônimo. Linha sem conteúdo é omitida.
+- Toda linha de **Restrições** e de **Notas** tem citação.
+- Citação literal só em **Notas** de divergência: no máximo uma frase, entre aspas, no idioma original.
+- A validação é feita por lote, em `validacao/lote-N.md`: um item por citação, com a página do PDF.
 
 ## Frontmatter
 
@@ -93,3 +112,4 @@ Tags aninhadas do Obsidian, geradas a partir da tabela e de `flexivel`.
 3. Todo wikilink e todo instrumento resolvem para uma nota existente.
 4. `ambigua_com` é recíproca.
 5. Os arquivos de `bloomberg_description/` mantêm o hash registrado.
+6. Toda citação usa uma chave de `fontes/README.md` e uma página dentro do intervalo do livro.

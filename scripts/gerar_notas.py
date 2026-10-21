@@ -37,7 +37,7 @@ def nota(template: str, stem: str, nome: str, cod: str) -> str:
         linhas = [l for l in texto.splitlines() if not l.startswith(CAMPOS_1_PERNA)]
         linhas.insert(linhas.index("composta_de: []"), "familia: generica")
         texto = "\n".join(linhas) + "\n"
-        texto = re.sub(r"## Pernas\n\n\|.*\|\n\|.*\|\n\n", "", texto)
+        texto = re.sub(r"## Pernas\n\n(\|.*\|\n\|.*\|\n\n){2}", "", texto)
 
     return texto
 

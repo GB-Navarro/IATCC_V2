@@ -4,6 +4,10 @@ Mudanças no sistema, da mais recente para a mais antiga. As decisões estão em
 
 ## 2026-10-21
 
+- Lotes 2 a 5 preenchidos (53 notas). Gerados `validacao/lote-2.md` a `lote-5.md` e o índice `validacao/README.md`: 472 citações no total, aguardando validação (D27).
+- Tabela de origem implantada (D25): schema e template atualizados; as 12 notas do lote 1 foram reescritas e as outras 53, migradas. O `validacao/lote-1.md` foi refeito com 155 citações e pontos de atenção. Registrada a proposta D26 (fontes como notas).
+- Lote 1 preenchido com citações: CP, RR, SD, SN, SDR, PF, CS, DS, SG, BF, BFC e CR. Gerado o checklist `validacao/lote-1.md`, com 80 itens, aguardando validação (D24).
+- `_schema.md` e `_template.md` ganharam as regras de citação e a seção Relações; a seção Fontes saiu. As 65 notas foram migradas. Criado `scripts/checklist_citacoes.py` (D24).
 - Obtido o `natenberg-1994` (escaneado), renomeado e indexado. O CR deixou de depender só do OVML (D23).
 - Obtidos `wystup-2006` (1ª ed.) e `reiswich-wystup-2009`, já renomeados. O índice foi refeito com páginas impressas para todas as estruturas e quatro divergências resolvidas (D22).
 - Obtidos `hull-2015` (9ª ed.) e `haug-2007`. Fontes renomeadas para `<chave>_<título-curto>`. O índice ganhou paginação, seções relevantes e duas divergências confirmadas pelo Hull: DS e RF (D21).

@@ -1,11 +1,10 @@
 ---
 aliases: ["Digital Seq"]
 composta_de: []
-variante_de: []
+variante_de: ["[[DIVA]]"]
 flexivel: []
-barreira:
-barreiras:
-payoff:
+barreiras: 2
+payoff: digital
 # gerado pelo script — não editar
 tags: []
 instrumentos: []
@@ -19,9 +18,15 @@ ambigua_com: []
 
 | instrumento | tipo | strike | vencimento | notional | lado | moneyness |
 |---|---|---|---|---|---|---|
+| DISEQ | — | — | T1 | 1 | + | — |
 
-## Restrições
+| Informação | Valor | Fonte |
+|---|---|---|
+| Composição | digital com barreiras sequenciais | [ovml] |
+| Barreira | duas barreiras ativadas em sequência | [inferência: mesmo uso de "sequential" no KIKOSQ; haug-2007, p. 169] |
+| Payoff | digital | [ovml] |
+| Variante de | DIVA, com barreiras sequenciais | [inferência: texto da Bloomberg do DISEQ] |
 
 ## Notas
 
-## Fontes
+- A descrição da Bloomberg tem uma linha e não define tipo, strike nem barreiras [ovml].

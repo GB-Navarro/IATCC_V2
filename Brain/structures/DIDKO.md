@@ -1,11 +1,11 @@
 ---
 aliases: ["Digital DKO"]
 composta_de: []
-variante_de: []
+variante_de: ["[[DIKO]]"]
 flexivel: []
-barreira:
-barreiras:
-payoff:
+barreira: ko
+barreiras: 2
+payoff: digital
 # gerado pelo script — não editar
 tags: []
 instrumentos: []
@@ -19,9 +19,11 @@ ambigua_com: []
 
 | instrumento | tipo | strike | vencimento | notional | lado | moneyness |
 |---|---|---|---|---|---|---|
+| DIDKO | call | K1 | T1 | 1 | + | — |
 
-## Restrições
-
-## Notas
-
-## Fontes
+| Informação | Valor | Fonte |
+|---|---|---|
+| Composição | digital que deixa de existir se o spot tocar qualquer uma de duas barreiras; a tabela mostra a call | [ovml] |
+| Barreira | ko, duas barreiras | [ovml] |
+| Payoff | digital | [ovml] |
+| Variante de | DIKO, com duas barreiras | [inferência: comparação dos textos da Bloomberg do DIKO e do DIDKO] |

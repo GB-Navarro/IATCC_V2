@@ -20,8 +20,9 @@ ambigua_com: []
 | instrumento | tipo | strike | vencimento | notional | lado | moneyness |
 |---|---|---|---|---|---|---|
 
+| Informação | Valor | Fonte |
+|---|---|---|
+
 ## Restrições
 
 ## Notas
-
-## Fontes

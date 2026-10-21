@@ -3,9 +3,6 @@ aliases: ["Cash"]
 composta_de: []
 variante_de: []
 flexivel: []
-barreira:
-barreiras:
-payoff:
 # gerado pelo script — não editar
 tags: []
 instrumentos: []
@@ -19,9 +16,13 @@ ambigua_com: []
 
 | instrumento | tipo | strike | vencimento | notional | lado | moneyness |
 |---|---|---|---|---|---|---|
+| CASH | — | — | T1 | 1 | + | — |
 
-## Restrições
+| Informação | Valor | Fonte |
+|---|---|---|
+| Composição | pagamento ou recebimento de um valor em dinheiro | [ovml] |
+| Vencimento | a data de entrega especificada | [ovml] |
 
 ## Notas
 
-## Fontes
+- Fonte única: OVML [ovml].
