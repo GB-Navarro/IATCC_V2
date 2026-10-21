@@ -42,7 +42,7 @@ DTCC (registros + insumos calculados)       Brain/ (base de conhecimento)
 | `scripts/hooks/checar_docs.py` | detecta mudanças não registradas nos docs |
 | `scripts/checklist_citacoes.py` | gera o checklist de validação de um lote |
 | `validacao/` | checklists de validação das citações, um por lote |
-| `docs/` | esta documentação; `to-do.md` lista os próximos passos |
+| `docs/` | esta documentação; `to-do.md` lista os próximos passos e `ideas.md` as propostas ainda não aprovadas |
 | `fontes/` | PDFs das fontes (só local) e índice com chaves, edições e cobertura por estrutura |
 | `CLAUDE.md` | regras do projeto e critérios de atualização dos docs, lidos pelo Claude Code em toda sessão |
 | `.claude/settings.json` | hooks `Stop` e `SessionStart`, que rodam o `checar_docs.py` |

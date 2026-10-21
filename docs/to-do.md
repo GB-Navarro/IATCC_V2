@@ -1,6 +1,6 @@
 # To-do
 
-`[ ]` pendente · `[x]` feito. **Decisão aberta** marca o item que precisa da escolha do usuário antes de começar.
+`[ ]` pendente · `[x]` feito. **Decisão aberta** marca o item que precisa da escolha do usuário antes de começar. As propostas ainda não aprovadas ficam em [`ideas.md`](ideas.md).
 
 ## Fase A — Fechar a base
 

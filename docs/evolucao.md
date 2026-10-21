@@ -4,6 +4,7 @@ Mudanças no sistema, da mais recente para a mais antiga. As decisões estão em
 
 ## 2026-10-21
 
+- Criado `docs/ideas.md`, com propostas ainda não aprovadas: algoritmos para o matching (CSP, cobertura exata, pontuação, restrições flexíveis), agrupamento por janela de tempo, usos do feedback humano e RLHF como trabalho futuro.
 - Criado `docs/to-do.md`, com o roteiro por fase (A–D), o rastreamento e o feedback das decisões. O README passa a apontar para ele (D28).
 - Lotes 2 a 5 preenchidos (53 notas). Gerados `validacao/lote-2.md` a `lote-5.md` e o índice `validacao/README.md`: 472 citações no total, aguardando validação (D27).
 - Tabela de origem implantada (D25): schema e template atualizados; as 12 notas do lote 1 foram reescritas e as outras 53, migradas. O `validacao/lote-1.md` foi refeito com 155 citações e pontos de atenção. Registrada a proposta D26 (fontes como notas).
