@@ -4,6 +4,7 @@ Mudanças no sistema, da mais recente para a mais antiga. As decisões estão em
 
 ## 2026-10-21
 
+- Segunda passada nas citações (Claude), antes da validação do usuário: 161 trechos das fontes e 99 do OVML conferidos, todos encontrados. Corrigida a citação do DOT (p. 55 → p. 40); 10 avisos 🔎 nos checklists. Resumo em `validacao/README.md`.
 - `ideas.md` ganhou a explicação intuitiva das sete estações e a comparação algoritmos + LLM × LLM sozinha. `to-do.md` ganhou a Fase A2 (piloto da versão Agente), a Fase B como versão Agente + algoritmos e a Fase D com as duas versões e o experimento de três braços (D31).
 - Definida a chave de agrupamento: (intervalo de segundos, plataforma de execução, par de moedas) (D29, revisada pela D30). `to-do.md` e `ideas.md` foram ajustados.
 - Criado `docs/ideas.md`, com propostas ainda não aprovadas: algoritmos para o matching (CSP, cobertura exata, pontuação, restrições flexíveis), agrupamento por janela de tempo, usos do feedback humano e RLHF como trabalho futuro.

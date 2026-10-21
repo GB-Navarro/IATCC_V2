@@ -114,7 +114,8 @@ Marque cada item depois de conferir a afirmação na página indicada. Itens com
 
 - Origem · **Composição:** pagamento fixo se o spot tocar qualquer uma de duas barreiras
   - [ ] `[ovml]` — texto Bloomberg na nota
-  - [ ] `[wystup-2006, p. 55]` — wystup-2006: PDF 74
+  - [ ] `[wystup-2006, p. 40]` — wystup-2006: PDF 59
+    - 🔎 Corrigido nesta passada: a citação era p. 55, que só menciona o double one-touch de passagem. A definição está na p. 40.
   - [ ] `[haug-2007, p. 180]` — haug-2007: PDF 219
 - Origem · **Barreira:** ki, duas barreiras
   - [ ] `[ovml]` — texto Bloomberg na nota

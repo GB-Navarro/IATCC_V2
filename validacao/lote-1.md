@@ -21,6 +21,7 @@ Marque cada item depois de conferir a afirmação na página indicada. Itens com
   - [ ] `[wystup-2006, p. 30]` — wystup-2006: PDF 49
 - Origem · **Strikes:** diferentes; a call comprada tem o strike mais baixo
   - [ ] `[ovml]` — texto Bloomberg na nota
+    - 🔎 O OVML sustenta só "strikes diferentes". "A call comprada tem o strike mais baixo" vem do Hull (p. 258).
   - [ ] `[hull-2015, p. 258]` — hull-2015: PDF 281
 - Origem · **Vencimento:** o mesmo nas duas pernas
   - [ ] `[hull-2015, p. 258]` — hull-2015: PDF 281
@@ -45,6 +46,7 @@ Marque cada item depois de conferir a afirmação na página indicada. Itens com
   - [ ] `[hull-2015, p. 371]` — hull-2015: PDF 394
 - Origem · **Strikes:** diferentes; put abaixo da call
   - [ ] `[ovml]` — texto Bloomberg na nota
+    - 🔎 O OVML diz "strikes diferentes" e as duas opções OTM. "Put abaixo da call" é consequência de as duas serem OTM; não está escrito.
   - [ ] `[hull-2015, pp. 370–371]` — hull-2015: PDF 393–394
 - Origem · **Vencimento:** o mesmo nas duas pernas
   - [ ] `[ovml]` — texto Bloomberg na nota
@@ -101,6 +103,7 @@ Marque cada item depois de conferir a afirmação na página indicada. Itens com
   - [ ] `[wystup-2006, p. 35]` — wystup-2006: PDF 54
 - Origem · **Strikes:** diferentes; call acima da put
   - [ ] `[ovml]` — texto Bloomberg na nota
+    - 🔎 O OVML sustenta só "strikes diferentes". "Call acima da put" vem do Hull (p. 269).
   - [ ] `[hull-2015, p. 269]` — hull-2015: PDF 292
 - Origem · **Vencimento:** o mesmo nas duas pernas
   - [ ] `[ovml]` — texto Bloomberg na nota
@@ -146,6 +149,7 @@ Marque cada item depois de conferir a afirmação na página indicada. Itens com
   - [ ] `[ovml]` — texto Bloomberg na nota
 - Origem · **Notional:** diferente: o da put vendida é menor que o da call (baixo risco) ou maior (alto risco, ex.: o dobro)
   - [ ] `[ovml]` — texto Bloomberg na nota
+    - 🔎 O OVML sustenta só "notionals diferentes". O detalhe de baixo e alto risco vem do Wystup (p. 141).
   - [ ] `[wystup-2006, p. 141]` — wystup-2006: PDF 160
 - Origem · **Instrumento:** opções europeias
   - [ ] `[inferência: combinação de vanillas, que o Wystup define como opções europeias, wystup-2006, p. 39]` — wystup-2006: PDF 58 ⚠ inferência
@@ -180,6 +184,7 @@ Marque cada item depois de conferir a afirmação na página indicada. Itens com
 - Origem · **Moneyness:** livre: strike próximo do preço corrente na visão neutra, acima na altista, abaixo na baixista
   - [ ] `[hull-2015, p. 266]` — hull-2015: PDF 289
   - [ ] `[ovml]` — texto Bloomberg na nota
+    - 🔎 O OVML só fala em visão neutra. O resto vem do Hull (p. 266).
 - Origem · **Instrumento:** opções europeias
   - [ ] `[hull-2015, p. 265]` — hull-2015: PDF 288
 - Origem · **Sinônimo:** horizontal spread; time spread
@@ -202,6 +207,7 @@ Marque cada item depois de conferir a afirmação na página indicada. Itens com
   - [ ] `[natenberg-1994, p. 157]` — natenberg-1994: PDF 167
 - Origem · **Instrumento:** opções europeias
   - [ ] `[hull-2015, pp. 265–266]` — hull-2015: PDF 288–289
+    - 🔎 Apoio indireto: na p. 266 o diagonal fala só em "calls". "Europeias" vem do calendar spread na p. 265, no mesmo contexto.
 - Origem · **Flexível:** notional: pode ter razão diferente de 1:1
   - [ ] `[natenberg-1994, p. 157]` — natenberg-1994: PDF 167
 - Origem · **Variante de:** CS, com strikes diferentes
@@ -228,6 +234,7 @@ Marque cada item depois de conferir a afirmação na página indicada. Itens com
   - [ ] `[ovml]` — texto Bloomberg na nota
 - Origem · **Moneyness:** put e call vendidas OTM (formam um strangle)
   - [ ] `[ovml]` — texto Bloomberg na nota
+    - 🔎 O OVML diz "venda de um strangle", sem dizer OTM. OTM vem da definição de strangle do Wystup (p. 35).
   - [ ] `[wystup-2006, p. 35]` — wystup-2006: PDF 54
 - Origem · **Instrumento:** opções europeias
   - [ ] `[wystup-2006, pp. 29, 39]` — wystup-2006: PDF 48, 58
@@ -269,6 +276,7 @@ Marque cada item depois de conferir a afirmação na página indicada. Itens com
 
 - Origem · **Composição:** compra das calls K1 e K3, venda de duas calls K2; só calls ou só puts
   - [ ] `[ovml]` — texto Bloomberg na nota
+    - 🔎 O OVML sustenta "só calls ou só puts", com as pontas compradas e o meio vendido. Não cita as duas calls em K2, que vêm do Hull (p. 264).
   - [ ] `[hull-2015, pp. 262, 264]` — hull-2015: PDF 285, 287
 - Origem · **Strikes:** três; K2 no meio: K3 − K2 = K2 − K1
   - [ ] `[hull-2015, pp. 264, 270]` — hull-2015: PDF 287, 293

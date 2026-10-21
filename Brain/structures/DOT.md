@@ -23,7 +23,7 @@ ambigua_com: []
 
 | Informação | Valor | Fonte |
 |---|---|---|
-| Composição | pagamento fixo se o spot tocar qualquer uma de duas barreiras | [ovml]; [wystup-2006, p. 55]; [haug-2007, p. 180] |
+| Composição | pagamento fixo se o spot tocar qualquer uma de duas barreiras | [ovml]; [wystup-2006, p. 40]; [haug-2007, p. 180] |
 | Barreira | ki, duas barreiras | [ovml]; [haug-2007, p. 180] |
 | Payoff | toque | [ovml] |
 | Variante de | OT, com duas barreiras | [inferência: comparação dos textos da Bloomberg do OT e do DOT] |

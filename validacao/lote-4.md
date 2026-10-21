@@ -21,6 +21,7 @@ Marque cada item depois de conferir a afirmação na página indicada. Itens com
   - [ ] `[ovml]` — texto Bloomberg na nota
 - Origem · **Vencimento:** o mesmo nas duas pernas
   - [ ] `[ovml]` — texto Bloomberg na nota
+    - 🔎 Apoio indireto: o OVML diz "At expiration", no singular, sem afirmar explicitamente que as pernas têm o mesmo vencimento.
 - Origem · **Notional:** igual nas duas pernas
   - [ ] `[wystup-2006, p. 145, exemplo]` — wystup-2006: PDF 164
 - Origem · **Barreira:** reverse knock-in na put: é tocada quando a put vai para dentro do dinheiro
