@@ -146,3 +146,9 @@ Os cinco lotes foram preenchidos antes de começar a validação, que o usuário
 - **Notas com pernas sem tipo informado (BFW, KKF):** a tabela tem uma linha só, com o próprio código como instrumento. A composição fica em `composta_de`, para não inventar os tipos.
 - **Toques (OT, NT, DOT, DNT):** o campo `barreira` registra `ki` quando o toque ativa o pagamento e `ko` quando o cancela.
 - **Risco aceito:** um erro de padrão encontrado na validação pode exigir corrigir várias notas de uma vez.
+
+### D28 · 2026-10-21 · proposta — Arquitetura do agente, rastreamento e feedback
+- **Arquitetura:** fluxo fixo antes de agente. O matching entrega as candidatas, e uma chamada ao Claude com structured output (códigos em lista fechada) decide. Agente com ferramentas só se a avaliação pedir.
+- **Fora do escopo:** sem RAG nem fine-tuning; MCP é opcional.
+- **Rastreamento:** cada decisão fica num SQLite com rastro completo e versões. A avaliação humana é feita por campo, com a camada do erro, e alimenta um ciclo de refinamento com um conjunto de teste em que nunca se ajusta nada.
+- **Detalhes:** `docs/to-do.md`.

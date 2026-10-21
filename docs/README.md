@@ -42,7 +42,7 @@ DTCC (registros + insumos calculados)       Brain/ (base de conhecimento)
 | `scripts/hooks/checar_docs.py` | detecta mudanças não registradas nos docs |
 | `scripts/checklist_citacoes.py` | gera o checklist de validação de um lote |
 | `validacao/` | checklists de validação das citações, um por lote |
-| `docs/` | esta documentação |
+| `docs/` | esta documentação; `to-do.md` lista os próximos passos |
 | `fontes/` | PDFs das fontes (só local) e índice com chaves, edições e cobertura por estrutura |
 | `CLAUDE.md` | regras do projeto e critérios de atualização dos docs, lidos pelo Claude Code em toda sessão |
 | `.claude/settings.json` | hooks `Stop` e `SessionStart`, que rodam o `checar_docs.py` |
@@ -56,11 +56,7 @@ DTCC (registros + insumos calculados)       Brain/ (base de conhecimento)
 
 ## Próximos passos
 
-0. Fontes completas ([`fontes/README.md`](../fontes/README.md)).
-1. Validar os cinco lotes de uma vez (`validacao/README.md`, 472 citações) e corrigir o que for marcado com ❌.
-2. Escrever o gerador e validador de tags (passo 4 do plano).
-3. Agrupamento DTCC, matching, agente e avaliação.
-4. A decidir depois: fontes como notas do Brain (proposta D26).
+A lista completa, por fase e com as decisões abertas, está em [`to-do.md`](to-do.md). O próximo item é validar os cinco lotes (`validacao/README.md`).
 
 ### Pendências conhecidas no texto da Bloomberg
 
