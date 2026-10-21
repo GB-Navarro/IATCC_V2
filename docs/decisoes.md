@@ -55,7 +55,7 @@ Nenhuma das duas vira nota. Por isso `tipos/` só distingue `mesmo-tipo` de `cal
 ### D12 · 2026-10-20 · aceita — Moneyness ranqueia, não filtra
 ATM, OTM e ITM costumam ser só convenção e raramente são obrigatórios. Usados como filtro, eliminariam estruturas válidas.
 
-### D13 · 2026-10-20 · proposta — Matching determinístico, LLM depois
+### D13 · 2026-10-20 · substituída (D31) — Matching determinístico, LLM depois
 Python calcula a assinatura do grupo, testa as divisões possíveis e filtra as candidatas. O LLM só desempata e explica.
 - **Motivo:** o resultado fica reprodutível e avaliável, e a combinatória de grupos grandes não fica nas mãos do LLM.
 
@@ -152,3 +152,21 @@ Os cinco lotes foram preenchidos antes de começar a validação, que o usuário
 - **Fora do escopo:** sem RAG nem fine-tuning; MCP é opcional.
 - **Rastreamento:** cada decisão fica num SQLite com rastro completo e versões. A avaliação humana é feita por campo, com a camada do erro, e alimenta um ciclo de refinamento com um conjunto de teste em que nunca se ajusta nada.
 - **Detalhes:** `docs/to-do.md`.
+
+### D29 · 2026-10-21 · substituída (D30) — Agrupamento por intervalo de segundos e plataforma
+Os registros do DTCC são agrupados por intervalo de segundos e mesma plataforma de execução.
+- **Revisa** a D02: o subjacente não entra na chave do grupo. Por isso o matching precisa da regra genérica "todas as pernas de um bloco têm o mesmo subjacente".
+- **Em aberto:** o tamanho do intervalo (Δt) e o tratamento dos trades off-facility, que vêm sem plataforma.
+
+### D30 · 2026-10-21 · aceita — Chave de agrupamento: (intervalo de segundos, plataforma, par de moedas)
+O grupo é definido pelo vetor (intervalo de segundos, plataforma de execução, par de moedas).
+- **Revisa** a D29: o par de moedas volta à chave. A regra "mesmo subjacente" no matching deixa de ser necessária e vira só uma verificação de consistência.
+- **Em aberto:** o tamanho do intervalo (Δt) e o tratamento dos trades off-facility, que vêm sem plataforma.
+
+### D31 · 2026-10-21 · aceita — Duas versões para comparação: Agente e Agente + algoritmos
+- **Agente:** o LLM classifica sozinho, com a base.
+- **Agente + algoritmos:** as sete estações genéricas de `ideas.md` (ideia 1) resolvem o que é exato, e o LLM entra só nos casos ambíguos.
+- **Piloto:** a versão Agente roda nos casos de teste antes de os algoritmos serem construídos (Fase A2).
+- **Experimento final:** três braços (algoritmos sozinhos, Agente + algoritmos, Agente).
+- **Revisa** a D13, que previa só o matching seguido do LLM.
+- **Motivo:** a vantagem dos algoritmos é uma hipótese; o TCC precisa demonstrá-la medindo.
