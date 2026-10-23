@@ -27,11 +27,11 @@ ambigua_com: []
 | Vencimento | o mesmo nas três pernas | [ovml] |
 | Notional | igual nas três pernas | [ovml]; [wystup-2006, p. 39, exemplo] |
 | Moneyness | call comprada ATM | [ovml] |
-| Moneyness | put e call vendidas OTM (formam um strangle) | [ovml]; [wystup-2006, p. 35] |
-| Instrumento | opções europeias | [wystup-2006, pp. 29, 39] |
+| Moneyness | put e call vendidas OTM, como num strangle | [inferência: o OVML descreve a venda de um strangle, e o Wystup define o strangle com opções OTM, wystup-2006, p. 35] |
+| Instrumento | opções europeias | [inferência: seção de estratégias com vanillas, wystup-2006, p. 29; vanilla = opção europeia, wystup-2006, p. 39] |
 | Flexível | notional: igual é o usual, não uma exigência | [ovml] |
 | Composta de | EU (a opção ATM comprada) e SN (o strangle vendido) | [ovml] |
 
 ## Restrições
 
-- Costuma ser montado a custo zero [wystup-2006, p. 38]; [ovml].
+- Costuma ser montado a custo baixo ou zero [ovml]; o Wystup o apresenta como produto de custo zero [wystup-2006, p. 38].

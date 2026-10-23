@@ -29,6 +29,6 @@ ambigua_com: []
 
 ## Restrições
 
-- A barreira pode ser americana (vale o tempo todo) ou europeia (só no vencimento) [wystup-2006, pp. 40, 42].
+- A barreira pode ser americana (vale o tempo todo) ou europeia (só no vencimento) [wystup-2006, pp. 40, 42]. Por tradição, as barreiras são americanas [wystup-2006, p. 43].
 - Barreira regular fica fora do dinheiro; reverse, dentro do dinheiro [wystup-2006, p. 42].
 - O prêmio é menor que o da vanilla equivalente [ovml]; [hull-2015, p. 604].

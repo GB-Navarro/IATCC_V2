@@ -27,7 +27,7 @@ ambigua_com: []
 | Barreira | kiko no KIKO sequencial; dois ki no KIKI sequencial; duas barreiras | [ovml] |
 | Payoff | vanilla | [ovml] |
 | Sinônimo | KIKO do tipo 2: o knock-out só pode ocorrer depois do knock-in | [wystup-2006, pp. 115–116] |
-| Sinônimo | o KIKI sequencial é uma first-then-barrier option | [haug-2007, p. 169] |
+| Sinônimo | o KIKI sequencial é uma first-then-in barrier option (ex.: first-down-then-up-and-in call) | [haug-2007, p. 169] |
 
 ## Notas
 

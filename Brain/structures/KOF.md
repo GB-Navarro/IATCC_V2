@@ -33,3 +33,4 @@ ambigua_com: []
 
 - Se a barreira é tocada, o cliente fica sem hedge [ovml]; [wystup-2006, p. 144].
 - É montado a custo zero [wystup-2006, p. 144].
+- Não tem pior caso garantido [wystup-2006, p. 144].

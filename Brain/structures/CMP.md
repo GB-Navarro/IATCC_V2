@@ -22,10 +22,11 @@ ambigua_com: []
 | Informação | Valor | Fonte |
 |---|---|---|
 | Composição | opção sobre uma vanilla: a compound call dá o direito de comprar a vanilla, a compound put o de vender; a tabela mostra a call | [ovml]; [wystup-2006, p. 58]; [hull-2015, p. 602] |
-| Strikes | dois: o da compound (o prêmio a pagar pela vanilla) e o da vanilla; a tabela mostra só K1 | [ovml]; [hull-2015, p. 602] |
-| Vencimento | dois: o da compound e o da vanilla; a tabela mostra só T1 | [ovml]; [hull-2015, p. 602] |
+| Strikes | dois: o da compound (o prêmio a pagar pela vanilla) e o da vanilla; a tabela mostra só K1 | [ovml]; [hull-2015, pp. 602–603] |
+| Vencimento | dois: o da compound e o da vanilla; a tabela mostra só T1 | [ovml]; [hull-2015, pp. 602–603] |
 | Payoff | composto | [ovml]; [haug-2007, p. 132] |
 
 ## Restrições
 
 - Permite pagar o prêmio da vanilla em parcelas [wystup-2006, p. 58].
+- A compound pode ser call ou put sobre uma call ou uma put: são quatro tipos [hull-2015, p. 602].

@@ -26,5 +26,5 @@ ambigua_com: []
 
 ## Restrições
 
-- Liquidado em moeda estrangeira, usa o inverso da média, ou seja, a média harmônica [ovml]; [wystup-2006, p. 131].
+- Liquidado em moeda estrangeira, usa o inverso da média do spot [ovml], que é a média harmônica da taxa inversa 1/S [wystup-2006, p. 131].
 - Média geométrica ou liquidação em moeda estrangeira exigem volatilidade no apreçamento [ovml].

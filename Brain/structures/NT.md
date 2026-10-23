@@ -24,6 +24,6 @@ ambigua_com: []
 | Informação | Valor | Fonte |
 |---|---|---|
 | Composição | pagamento fixo se o spot não tocar a barreira até o vencimento | [ovml]; [wystup-2006, p. 50] |
-| Barreira | ko (o toque cancela o pagamento), uma barreira | [ovml]; [wystup-2006, p. 50] |
+| Barreira | ko (o toque cancela o pagamento), uma barreira | [ovml]; [haug-2007, p. 178] |
 | Payoff | toque | [ovml] |
 | Variante de | OT, com a condição invertida: one-touch mais no-touch pagam com certeza | [wystup-2006, p. 50] |

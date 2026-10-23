@@ -25,7 +25,7 @@ ambigua_com: []
 | Strikes | o mesmo nas duas pernas | [ovml]; [hull-2015, p. 267]; [wystup-2006, p. 33] |
 | Vencimento | o mesmo nas duas pernas | [ovml]; [hull-2015, p. 267] |
 | Notional | igual nas duas pernas | [wystup-2006, p. 35, exemplo] |
-| Moneyness | ATM | [wystup-2006, p. 35, exemplo]; [reiswich-wystup-2009, p. 9] |
+| Moneyness | ATM | [wystup-2006, p. 35, exemplo]; [inferência: o texto da Bloomberg do SDR contrasta o straddle com o strike OTM do ratio straddle] |
 | Instrumento | opções europeias | [hull-2015, p. 267] |
 | Variante de | SN, com os dois strikes iguais | [inferência: hull-2015, pp. 267, 269] |
 

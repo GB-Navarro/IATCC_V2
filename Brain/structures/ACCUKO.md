@@ -24,10 +24,10 @@ ambigua_com: []
 | Informação | Valor | Fonte |
 |---|---|---|
 | Composição | accumulator cujos fixings restantes são cancelados se o spot tocar uma barreira knock-out americana; o acumulado até ali vale | [ovml] |
-| Barreira | ko, uma barreira, contínua em FX | [ovml]; [wystup-2006, p. 157] |
+| Barreira | ko, uma barreira, contínua em FX | [ovml]; [wystup-2006, p. 156] |
 | Payoff | acumulativo | [ovml] |
 | Variante de | ACCU, com knock-out | [ovml] |
 
 ## Restrições
 
-- O fixing do dia conta para o acumulado se ocorrer antes do knock-out [wystup-2006, p. 157].
+- Por padrão, o fixing do dia conta para o acumulado se ocorrer antes do knock-out; isso deve ser combinado no contrato [wystup-2006, p. 157].

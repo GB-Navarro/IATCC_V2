@@ -31,4 +31,5 @@ ambigua_com: []
 
 - Knock-out mais knock-in com os mesmos parâmetros equivalem à vanilla [wystup-2006, p. 42].
 - Barreira regular fica fora do dinheiro; reverse, dentro do dinheiro [wystup-2006, p. 42].
+- Por tradição, as barreiras são americanas [wystup-2006, p. 43].
 - O prêmio é menor que o da vanilla equivalente [ovml].

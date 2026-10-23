@@ -4,8 +4,9 @@
 
 ## Fase A — Fechar a base
 
-- [ ] Validar os cinco lotes (`validacao/README.md`, 472 citações) e corrigir os itens marcados com ❌.
-- [ ] Registrar os lotes como validados; fazer commit e tag `base-v1` no git.
+- [x] Validação do Claude, por agente separado, dos seis lotes (`validacao/claude/`), e correção das notas (D32–D37).
+- [x] Tag `base-v1-claude`; o MVP segue com ela.
+- [ ] Depois do MVP: validação humana (`validacao/humana/`, às cegas), correções, tag `base-v2-humana` e recálculo dos resultados.
 - [ ] Escrever `scripts/validar_base.py`:
   - gerar `tags`, `instrumentos` e `ambigua_com` a partir das tabelas de pernas;
   - rodar as 6 validações do `_schema.md`;

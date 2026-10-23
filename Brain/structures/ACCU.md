@@ -25,7 +25,7 @@ ambigua_com: []
 | Notional | o exibido é o máximo; cada fixing acrescenta o notional dividido pelo número de fixings | [ovml] |
 | Payoff | acumulativo | [ovml] |
 | Composta de | faders (fade-in calls e puts), possivelmente com faixas de knock-out | [wystup-2006, p. 157] |
-| Sinônimo | accumulative forward | [wystup-2006, p. 156] |
+| Sinônimo | accumulative forward | [inferência: mesma definição do texto da Bloomberg e da wystup-2006, p. 156; o Wystup chama esses produtos de "accumulators", wystup-2006, p. 161] |
 
 ## Restrições
 

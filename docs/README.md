@@ -22,7 +22,7 @@ DTCC (registros + insumos calculados)       Brain/ (base de conhecimento)
 
 | Etapa | Estado |
 |---|---|
-| Base: schema, template e notas | 65 notas preenchidas, aguardando validação (`validacao/README.md`) |
+| Base: schema, template e notas | 66 notas (65 do OVML + `COL`); validada pelo Claude (tag `base-v1-claude`); validação humana depois do MVP (`validacao/README.md`) |
 | Gerador e validador de tags | a fazer |
 | Agrupamento DTCC | a fazer |
 | Matching | a fazer |
