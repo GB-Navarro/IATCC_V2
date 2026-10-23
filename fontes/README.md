@@ -8,7 +8,7 @@
 
 ## Lista
 
-O deslocamento do Natenberg muda ao longo do escaneamento: é 10 até a p. 158 e 9 nas pp. 215–265 (conferidos pela imagem). O ponto de troca, entre as pp. 159 e 214, não foi localizado; citações nesse intervalo devem ser conferidas pela imagem.
+O deslocamento do Natenberg muda ao longo do escaneamento: é 10 até a p. 181 e 9 nas pp. 215–265 (conferidos pela imagem). O ponto de troca, entre as pp. 182 e 214, não foi localizado; citações nesse intervalo devem ser conferidas pela imagem.
 
 | Chave | Referência | Edição / ISBN | Página impressa = PDF − | Status |
 |---|---|---|---|---|
@@ -20,6 +20,8 @@ O deslocamento do Natenberg muda ao longo do escaneamento: é 10 até a p. 158 e
 | `wystup-fxcol-2025` | Wystup, U. "KIKO Double-Touch, Parisian Options and Triangular Relationships". MathFinance FX Column. | 2025 · gratuito | 0 | obtido |
 | `wystup-fxcol-2026` | Wystup, U. "Sales Slide for the Shark Forward". MathFinance FX Column. | 2026 · gratuito (.docx) | — | obtido |
 | `natenberg-1994` | Natenberg, S. *Option Volatility & Pricing: Advanced Trading Strategies and Techniques*. McGraw-Hill/Irwin. | ed. revisada, 1994 · 1-55738-486-X | 10 · 9 a partir de p. 215 | obtido (escaneado) |
+| `dsb-2018` | DSB Product Committee. *DSB Product Definitions – Annex 3 – FX*. Derivatives Service Bureau (ANNA DSB). | out. 2018 · gratuito (ISIN; matriz baseada na taxonomia ISDA 2.0) | 0 | obtido |
+| `dsb-2024` | Derivatives Service Bureau (ANNA DSB). *UPI Product Definitions – FOREIGN EXCHANGE* (planilha). | versão 6, 2024 · gratuito (UPI, usado no reporte à CFTC) | — (citar a aba) | obtido |
 | `wystup-2017` | Wystup, U. *FX Options and Structured Products*, 2ª ed. | 2017 | — | dispensado |
 | `clark-2011` | Clark, I. J. *Foreign Exchange Option Pricing*. | 2011 | — | dispensado |
 

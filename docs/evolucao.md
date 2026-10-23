@@ -4,6 +4,7 @@ Mudanças no sistema, da mais recente para a mais antiga. As decisões estão em
 
 ## 2026-10-23
 
+- Investigados os dados do DTCC (amostra de 21/10/2026). Achados em `docs/dtcc.md`: o produto vem no `UPI FISN`; não há campos de barreira; a janela de agrupamento recomendada é de 1 a 2 s; há forwards de delta hedge nos grupos com opção. Novas fontes `dsb-2018` e `dsb-2024`, com a taxonomia oficial de produtos FX do UPI.
 - Aplicada a 2ª rodada de decisões (CASH, FP, DACCR, DISEQ, KKF e duas regras no `_schema.md`). Validação do Claude concluída; commit e tag `base-v1-claude` (D37).
 - Aplicadas 9 decisões do usuário (COL, AM, CMP, KOKI, FE e regra de barreira no schema). Corrigidas duplicações em 5 notas causadas por uma nova execução do script. Checklists humanos gerados de novo (D36).
 
