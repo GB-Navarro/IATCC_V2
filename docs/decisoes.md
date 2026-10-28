@@ -225,3 +225,25 @@ O grupo é definido pelo vetor (intervalo de segundos, plataforma de execução,
   - Notas aceitam a linha "Fonte única para a definição: OVML";
   - um item em `flexivel` desliga as relações da tabela de pernas naquela coluna (igualdade e ordem dos símbolos; no notional, a razão).
 - **Encerramento:** com isso, a validação do Claude está concluída e a base recebe a tag `base-v1-claude`.
+
+### D38 · 2026-10-23 · aceita, sujeita à validação independente — Reorganização da base em pastas por categoria e número de pernas
+- **Estrutura:** `vanilla/`, `exotica/`, `linear/` e `generica/`, cada uma com `pernas/N/`. Plano e achados em `docs/dtcc.md`.
+- **Decisões do usuário, que seguem as recomendações:**
+  1. a categoria vem do produto UPI de cada perna, com a literatura como confirmação;
+  2. o FP vai para `vanilla`;
+  3. os forwards estruturados (ACCU, ACCUKI, ACCUKO, ARF, ASF, EF, BFF, FLEX) vão para `exotica`, com UPI Non_Standard;
+  4. os toques e as digitais com barreira recebem o UPI Digital_Option (Digital Barrier);
+  5. FX e CASH ficam em `linear`, com nota de que não aparecem no DTCC;
+  6. o schema ganha a regra do delta hedge;
+  7. a janela de agrupamento é de 2 s, estendida até 60 s entre registros marcados como pacote.
+- **TARF:** fica só registrado como lacuna da base (D8 do plano); nenhuma nota por enquanto.
+- **Amostra e scripts:** a amostra do DTCC e os scripts de análise não ficam no projeto; quando necessário, baixa-se o arquivo de novo.
+- **Validação independente** (três agentes; relatórios em `validacao/claude/d38-*.md`):
+  - ✅ a decisão 2 (FP);
+  - ◐ as decisões 3 a 7 e 9;
+  - ✗ o critério da decisão 1: o produto UPI não define o payoff. O `Non_Standard` inclui vanillas em CNY, e o NDO aceita Asian.
+  - As pastas resultantes ficam certas, exceto a FLEX.
+- **Revisões do usuário após a validação:**
+  - item 7: janela só de 2 s, sem a extensão para pacotes. Os vizinhos a 60 s são, em maioria, o mesmo negócio feito de novo, e a extensão fundiria grupos completos;
+  - item 9: `docs/dtcc.md` guarda URL, CRC32, tamanho e regras de limpeza, sem dados nem scripts. Os números dependem da limpeza.
+- **Pendentes:** critério da categoria, FLEX, delta hedge, duplicatas de prime brokerage, grupos com mais de 5 registros e ajustes menores.

@@ -25,6 +25,16 @@ Duas validações independentes da base (D32):
 
 Os números de itens e inferências mudam quando a validação do Claude divide ou corrige linhas. Os vereditos do Claude valem para as notas antes das correções; o status de cada correção está no topo de cada relatório.
 
+## Validação de decisões
+
+Agentes independentes conferem uma decisão antes que ela seja implementada.
+
+| Decisão | Relatórios | Resultado |
+|---|---|---|
+| D38: pastas por categoria e pernas | [taxonomia UPI](claude/d38-taxonomia.md), [literatura](claude/d38-literatura.md), [dados do DTCC](claude/d38-dados.md) | 1 ✅ (FP) · 6 ◐ · 1 ✗ (critério da categoria pelo produto UPI); ajustes aguardam o usuário |
+
+Os scripts citados nos relatórios ficaram fora do projeto (D38, item 9).
+
 ## Validação humana: como fazer
 
 1. Abra a fonte na página do PDF indicada no item. Os arquivos estão em `fontes/`.

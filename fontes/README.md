@@ -21,7 +21,7 @@ O deslocamento do Natenberg muda ao longo do escaneamento: é 10 até a p. 181 e
 | `wystup-fxcol-2026` | Wystup, U. "Sales Slide for the Shark Forward". MathFinance FX Column. | 2026 · gratuito (.docx) | — | obtido |
 | `natenberg-1994` | Natenberg, S. *Option Volatility & Pricing: Advanced Trading Strategies and Techniques*. McGraw-Hill/Irwin. | ed. revisada, 1994 · 1-55738-486-X | 10 · 9 a partir de p. 215 | obtido (escaneado) |
 | `dsb-2018` | DSB Product Committee. *DSB Product Definitions – Annex 3 – FX*. Derivatives Service Bureau (ANNA DSB). | out. 2018 · gratuito (ISIN; matriz baseada na taxonomia ISDA 2.0) | 0 | obtido |
-| `dsb-2024` | Derivatives Service Bureau (ANNA DSB). *UPI Product Definitions – FOREIGN EXCHANGE* (planilha). | versão 6, 2024 · gratuito (UPI, usado no reporte à CFTC) | — (citar a aba) | obtido |
+| `dsb-2024` | Derivatives Service Bureau (ANNA DSB). *UPI Product Definitions – FOREIGN EXCHANGE* (planilha). | versão 9, 2026-08-07 (a chave ficou com o ano errado) · gratuito (UPI, usado no reporte à CFTC) | — (citar a aba) | obtido |
 | `wystup-2017` | Wystup, U. *FX Options and Structured Products*, 2ª ed. | 2017 | — | dispensado |
 | `clark-2011` | Clark, I. J. *Foreign Exchange Option Pricing*. | 2011 | — | dispensado |
 
