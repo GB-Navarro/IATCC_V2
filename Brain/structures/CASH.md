@@ -20,9 +20,9 @@ ambigua_com: []
 
 | Informação | Valor | Fonte |
 |---|---|---|
-| Composição | pagamento ou recebimento de um valor em dinheiro | [ovml] |
+| Composição | pagamento ou recebimento de um valor em dinheiro; a tabela mostra o recebimento | [ovml] |
 | Vencimento | a data de entrega especificada | [ovml] |
 
 ## Notas
 
-- Fonte única: OVML [ovml].
+- Fonte única para a definição: OVML. Nenhuma fonte de `fontes/` define esta estrutura [inferência: cobertura por estrutura em `fontes/README.md`].

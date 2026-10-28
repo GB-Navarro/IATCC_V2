@@ -1,7 +1,7 @@
 ---
 aliases: ["Condor"]
 composta_de: ["[[SN]]"]
-variante_de: []
+variante_de: ["[[BF]]"]
 flexivel: []
 # gerado pelo script — não editar
 tags: []
@@ -24,12 +24,14 @@ ambigua_com: []
 | Informação | Valor | Fonte |
 |---|---|---|
 | Composição | compra de um strangle largo e venda de um strangle mais estreito | [ovml] |
-| Strikes | quatro; o strangle vendido (K2–K3) fica dentro do comprado (K1–K4) | [ovml] |
-| Strikes | os quatro costumam ser consecutivos | [natenberg-1994, p. 158] |
+| Strikes | quatro; o intervalo do strangle vendido (K2–K3) é menor que o do comprado (K1–K4) | [ovml] |
+| Strikes | as duas opções vendidas ficam entre as duas compradas | [natenberg-1994, p. 158] |
+| Strikes | as pontas têm o mesmo espaçamento: K2 − K1 = K4 − K3 | [inferência: o condor vale zero fora dos strikes extremos, natenberg-1994, p. 158] |
 | Vencimento | o mesmo nas quatro pernas | [natenberg-1994, p. 158] |
 | Notional | igual: uma opção por perna | [natenberg-1994, p. 158] |
-| Instrumento | opções europeias | [inferência: combinação de vanillas, que o Wystup define como opções europeias, wystup-2006, p. 39] |
+| Instrumento | opções europeias | [inferência: convenção do _schema.md, combinações de vanillas usam opções europeias; vanilla = opção europeia, wystup-2006, p. 39] |
 | Composta de | SN comprado (K1–K4) e SN vendido (K2–K3) | [ovml] |
+| Variante de | BF, com o strike central dividido em dois | [natenberg-1994, p. 158] |
 
 ## Notas
 

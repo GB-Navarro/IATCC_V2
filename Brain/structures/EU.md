@@ -22,5 +22,9 @@ ambigua_com: []
 | Informação | Valor | Fonte |
 |---|---|---|
 | Composição | uma call ou uma put; a tabela mostra a call | [ovml] |
-| Instrumento | opção europeia: exercício só no vencimento | [ovml]; [hull-2015, p. 9] |
+| Instrumento | opção europeia: exercício só no vencimento | [ovml]; [hull-2015, p. 9]; [wystup-2006, p. 3] |
+
+## Restrições
+
+- Em FX, as vanillas são em geral europeias [wystup-2006, p. 3].
 | Payoff | vanilla: exercida com lucro se o spot no vencimento estiver acima (call) ou abaixo (put) do strike | [ovml] |

@@ -170,3 +170,80 @@ O grupo é definido pelo vetor (intervalo de segundos, plataforma de execução,
 - **Experimento final:** três braços (algoritmos sozinhos, Agente + algoritmos, Agente).
 - **Revisa** a D13, que previa só o matching seguido do LLM.
 - **Motivo:** a vantagem dos algoritmos é uma hipótese; o TCC precisa demonstrá-la medindo.
+
+### D32 · 2026-10-22 · aceita — Duas validações separadas: Claude agora, humana depois do MVP
+- **Validação do Claude:** feita agora por um agente separado, sem o contexto da conversa que escreveu as notas. O resultado fica em `validacao/claude/`, com veredito e evidência por item, e o MVP segue com a base validada por ela (tag `base-v1-claude`).
+- **Validação humana:** feita pelo usuário depois do MVP, em `validacao/humana/`, às cegas (o checklist não mostra os vereditos do Claude). Depois das correções, a base recebe a tag `base-v2-humana` e os resultados do MVP são recalculados.
+- **Correções:** a nota é corrigida, o item recebe o veredito ✎ e as seções do checklist humano são geradas de novo.
+- **Revisa** a D27 na parte em que o usuário validaria tudo antes de seguir.
+- **Motivo:** ganhar tempo sem abrir mão da validação humana. A comparação entre as duas também é um resultado para o TCC.
+
+### D33 · 2026-10-22 · aceita — Correções da validação do Claude no lote 1
+- **Correções:** 21 das 25 propostas pelo agente independente foram aplicadas em 12 notas. As principais: o DS ganhou apoio direto (Hull, p. 272); o CR ganhou `variante_de: [[BF]]` e espaçamento igual das pontas; o 25 delta deixou de ser regra no RR e no SN (é exemplo; outros deltas são cotados, Wystup, p. 22); as citações `[ovml]` compostas foram divididas.
+- **Padrão corrigido em 8 notas:** "Fonte única: OVML" deixou de citar `[ovml]` (SDR, BFF, CASH, DACCR, EF, FP, KKF, TF).
+- **Convenção no `_schema.md`:** combinações de vanillas usam `EU`; a `AM` só aparece como estrutura de uma perna.
+- **Pendentes de decisão do usuário:** o `variante_de` do PF (RR ou forward sintético) e os aliases opcionais.
+
+### D34 · 2026-10-22 · aceita — Collar registrado como estrutura fora do OVML; PF e SN ajustados
+- **COL:** nas fontes, "collar" tem três sentidos: o par de opções (= RR no OVML, Wystup p. 31 e Hull p. 599), a posição protegida + put comprada + call vendida (*fence*, Natenberg pp. 263–265) e o collar de juros (fora do escopo). Foi registrada como `COL` a forma com a posição, a única que não duplica a receita do RR. É a primeira estrutura fora do OVML: não tem embed nem `[ovml]` (regra no `_schema.md`). O RR aponta para ela, e o COL é validado no lote 6.
+- **PF:** `variante_de` passa a ser FWD e RR, cada um com a sua citação (Wystup pp. 140–141). *Leveraged forward* entra nas Notas, não como alias, porque vale só para o estilo de alto risco.
+- **SN:** alias "Bottom Vertical Combination" (Hull, p. 269).
+- **Deslocamento do Natenberg:** é 10 até a p. 158 e 9 a partir da p. 263. O `checklist_citacoes.py` passou a aceitar faixas de deslocamento.
+- **Escolha do usuário:** "Collar" não virou alias do RR, porque o usuário quis o collar como estrutura própria.
+
+### D35 · 2026-10-22 · aceita — Correções das validações do Claude, lotes 2 a 6
+- **Resultado:** a validação independente dos lotes 2 a 6 encontrou 4 ✗ (DACCR, FP e duas no EC) e dezenas de citações parciais.
+- **Aplicadas** as correções verificadas, em 39 notas. As principais:
+  - o BFW ganhou tabela de 3 pernas, pelo *collar extra* do Wystup (pp. 172–173), que tem a mesma composição;
+  - o EC perdeu `flexivel: strike`;
+  - FX e FWD separaram o que diz o OVML do que vem do Hull e do Wystup;
+  - a codificação ki/ko de OT e NT passou a citar o Haug (pp. 177–178);
+  - o COL e o RR foram corrigidos.
+- **Padrão "Fonte única":** nas estruturas com cobertura parcial, a nota passou a dizer que as fontes tratam só componentes ou estruturas parecidas.
+- **Índice de fontes:** cobertura corrigida (FX, FWD, EU, AM, FE, BFW, EC). O deslocamento do Natenberg é 9 a partir da p. 215.
+- **Checklists humanos** gerados de novo: 553 itens.
+- **Pendentes:** 15 decisões do usuário, listadas no topo de cada relatório em `validacao/claude/`.
+
+### D36 · 2026-10-23 · aceita — Decisões do usuário sobre a validação do Claude (1ª rodada)
+- **COL:** mantém o nome Collar. Ganhou a restrição de que só casa quando a posição protegida está no mesmo grupo; sem ela, casa o RR.
+- **AM:** passa a ser variante do EU (Hull, p. 213).
+- **CMP:** registra os quatro tipos de compound (Hull, p. 602).
+- **KOKI:** mantém o alias "KIKO", com nota sobre a ambiguidade (Wystup, p. 116).
+- **FE:** ganha o alias "Forward Plus".
+- **`_schema.md`:** intervalos de contagem de fixings (FA, ACCR, DACCR) não são barreira.
+- **Sem alteração:** `payoff` e `barreira` ficam vazios em notas de uma linha que representam estruturas (EF, KKF).
+- **Em discussão:** CASH, "Fonte única" em Notas, FP, DACCR, DISEQ, TF, KKF.
+- **Erro corrigido:** cinco notas (AM, EAKO, DIVA, KO, DISEQ) tinham texto duplicado por uma nova execução do script de correções. Foram corrigidas, e uma varredura nas 66 notas não encontrou mais repetições.
+
+### D37 · 2026-10-23 · aceita — Decisões do usuário sobre a validação do Claude (2ª rodada)
+- **CASH:** a tabela mostra o recebimento.
+- **FP:** `payoff: vanilla` fica como suposição do caso mais comum, citada como inferência; a Bloomberg diz só "an option payoff".
+- **DACCR:** tipo `call` ("a tabela mostra a call") e linha de origem para o strike.
+- **DISEQ:** sai `barreiras: 2`; a dedução das duas barreiras fica só no texto, como inferência.
+- **KKF:** tabela de duas pernas (KO call comprada e KIKO put vendida, mesmo strike), deduzida como no forward sintético e marcada como inferência.
+- **`_schema.md`:**
+  - Notas aceitam a linha "Fonte única para a definição: OVML";
+  - um item em `flexivel` desliga as relações da tabela de pernas naquela coluna (igualdade e ordem dos símbolos; no notional, a razão).
+- **Encerramento:** com isso, a validação do Claude está concluída e a base recebe a tag `base-v1-claude`.
+
+### D38 · 2026-10-23 · aceita, sujeita à validação independente — Reorganização da base em pastas por categoria e número de pernas
+- **Estrutura:** `vanilla/`, `exotica/`, `linear/` e `generica/`, cada uma com `pernas/N/`. Plano e achados em `docs/dtcc.md`.
+- **Decisões do usuário, que seguem as recomendações:**
+  1. a categoria vem do produto UPI de cada perna, com a literatura como confirmação;
+  2. o FP vai para `vanilla`;
+  3. os forwards estruturados (ACCU, ACCUKI, ACCUKO, ARF, ASF, EF, BFF, FLEX) vão para `exotica`, com UPI Non_Standard;
+  4. os toques e as digitais com barreira recebem o UPI Digital_Option (Digital Barrier);
+  5. FX e CASH ficam em `linear`, com nota de que não aparecem no DTCC;
+  6. o schema ganha a regra do delta hedge;
+  7. a janela de agrupamento é de 2 s, estendida até 60 s entre registros marcados como pacote.
+- **TARF:** fica só registrado como lacuna da base (D8 do plano); nenhuma nota por enquanto.
+- **Amostra e scripts:** a amostra do DTCC e os scripts de análise não ficam no projeto; quando necessário, baixa-se o arquivo de novo.
+- **Validação independente** (três agentes; relatórios em `validacao/claude/d38-*.md`):
+  - ✅ a decisão 2 (FP);
+  - ◐ as decisões 3 a 7 e 9;
+  - ✗ o critério da decisão 1: o produto UPI não define o payoff. O `Non_Standard` inclui vanillas em CNY, e o NDO aceita Asian.
+  - As pastas resultantes ficam certas, exceto a FLEX.
+- **Revisões do usuário após a validação:**
+  - item 7: janela só de 2 s, sem a extensão para pacotes. Os vizinhos a 60 s são, em maioria, o mesmo negócio feito de novo, e a extensão fundiria grupos completos;
+  - item 9: `docs/dtcc.md` guarda URL, CRC32, tamanho e regras de limpeza, sem dados nem scripts. Os números dependem da limpeza.
+- **Pendentes:** critério da categoria, FLEX, delta hedge, duplicatas de prime brokerage, grupos com mais de 5 registros e ajustes menores.

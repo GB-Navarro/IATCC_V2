@@ -29,6 +29,10 @@ ambigua_com: []
 | Variante de | KOKI: é um caso especial de KIKO | [ovml]; [wystup-fxcol-2022, p. 1] |
 | Sinônimo | KOAMKIEU | [wystup-fxcol-2022, p. 1] |
 
+## Restrições
+
+- O cliente escolhe se o pagamento ocorre com o spot acima ou abaixo da barreira europeia no vencimento [ovml].
+
 ## Notas
 
 - Não confundir com a transatlantic barrier option do Wystup, em que as duas barreiras (americana e europeia) são knock-out [wystup-2006, p. 108].

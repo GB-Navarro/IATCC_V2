@@ -26,7 +26,7 @@ ambigua_com: []
 | Vencimento | o mesmo nas duas pernas | [ovml] |
 | Notional | diferente entre as pernas (razão r) | [ovml] |
 | Moneyness | strike geralmente fora do dinheiro | [ovml] |
-| Instrumento | opções europeias | [inferência: combinação de vanillas, que o Wystup define como opções europeias, wystup-2006, p. 39] |
+| Instrumento | opções europeias | [inferência: convenção do _schema.md, combinações de vanillas usam opções europeias; vanilla = opção europeia, wystup-2006, p. 39] |
 | Variante de | SD, com strike fora do dinheiro e notionals diferentes | [ovml] |
 
 ## Restrições
@@ -35,4 +35,4 @@ ambigua_com: []
 
 ## Notas
 
-- Fonte única: OVML. Nenhuma fonte de `fontes/README.md` trata a estrutura [ovml].
+- Fonte única: OVML. A busca por "ratio straddle" nas fontes com texto não teve resultado; o natenberg-1994, escaneado, não pôde ser pesquisado [inferência: busca de texto em `fontes/`].

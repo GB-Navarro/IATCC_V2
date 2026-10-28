@@ -25,8 +25,8 @@ ambigua_com: []
 | Strikes | a Bloomberg não fixa a relação entre a taxa do forward e o strike da opção | [ovml] |
 | Flexível | strike, pela mesma razão | [ovml] |
 | Vencimento | o mesmo nas duas pernas | [inferência: as duas pernas protegem o mesmo fluxo; texto da Bloomberg] |
-| Notional | igual: o valor total do hedge | [ovml] |
-| Composta de | FWD e EU | [ovml] |
+| Notional | igual: o valor total do hedge | [inferência: o texto da Bloomberg fala em "protection rate for their full hedge amount" e em participar de "any favourable market movements"] |
+| Composta de | FWD e EU | [ovml]; [inferência: convenção do _schema.md, combinações de vanillas usam opções europeias] |
 
 ## Restrições
 
@@ -34,4 +34,4 @@ ambigua_com: []
 
 ## Notas
 
-- Fonte única: OVML [ovml].
+- Fonte única para a definição: OVML. Nenhuma fonte de `fontes/` define esta estrutura [inferência: cobertura por estrutura em `fontes/README.md`].

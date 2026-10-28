@@ -21,7 +21,7 @@ ambigua_com: []
 
 | Informação | Valor | Fonte |
 |---|---|---|
-| Composição | opção cujo payoff depende da média do spot: average rate (média contra o strike) ou average strike (a média é o strike); a tabela mostra a call | [ovml]; [hull-2015, pp. 609, 611]; [wystup-2006, p. 69] |
+| Composição | opção cujo payoff depende da média do spot: average rate (média contra o strike) ou average strike (a média é o strike); a tabela mostra a call | [ovml]; [hull-2015, pp. 609, 611]; [wystup-2006, pp. 69–70] |
 | Payoff | media | [ovml] |
 | Sinônimo | opção asiática | [hull-2015, p. 609]; [wystup-2006, p. 69] |
 

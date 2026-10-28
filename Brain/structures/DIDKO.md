@@ -27,3 +27,7 @@ ambigua_com: []
 | Barreira | ko, duas barreiras | [ovml] |
 | Payoff | digital | [ovml] |
 | Variante de | DIKO, com duas barreiras | [inferência: comparação dos textos da Bloomberg do DIKO e do DIDKO] |
+
+## Notas
+
+- Fonte única para a definição: OVML. As fontes tratam só componentes ou estruturas parecidas [inferência: páginas indicadas para esta estrutura na cobertura de `fontes/README.md`].

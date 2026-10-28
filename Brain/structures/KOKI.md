@@ -30,4 +30,8 @@ ambigua_com: []
 
 ## Restrições
 
-- É replicável com barreiras padrão: KIKO(L, U) = KO(L) − DKO(L, U) [wystup-2006, p. 116].
+- É replicável com barreiras padrão: KIKO(L, U) = KO(L) − DKO(L, U), com L = barreira KO e U = barreira KI [wystup-2006, p. 116]; [wystup-fxcol-2022, p. 2].
+
+## Notas
+
+- O alias "KIKO" segue o Wystup, para quem o tipo 1 é o padrão de mercado, mas o tipo deve ser sempre esclarecido: "The first one is the market standard, but when dealing one should always clarify which type of knock-in-knock-out is agreed upon." [wystup-2006, p. 116]

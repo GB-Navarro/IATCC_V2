@@ -2,6 +2,25 @@
 
 Mudanças no sistema, da mais recente para a mais antiga. As decisões estão em [`decisoes.md`](decisoes.md).
 
+## 2026-10-28
+
+- Criado `decision_for_now.md`, na raiz, com as decisões pendentes, para outro agente decidir: resultado do experimento sobre a organização da base (pastas, índice, guia, arquivo único), pendências da D38 e decisões abertas de `to-do.md` e `decisoes.md`.
+
+## 2026-10-23
+
+- Validação independente da D38 por três agentes (taxonomia UPI, literatura e dados do DTCC). Relatórios em `validacao/claude/d38-*.md`. Corrigida a versão do `dsb-2024` em `fontes/README.md` (é a v9, de 2026-08-07).
+- Plano de pastas por categoria e pernas aprovado pelo usuário, sujeito à validação independente (D38). TARF registrado como lacuna.
+- Investigados os dados do DTCC (amostra de 21/10/2026). Achados em `docs/dtcc.md`: o produto vem no `UPI FISN`; não há campos de barreira; a janela de agrupamento recomendada é de 1 a 2 s; há forwards de delta hedge nos grupos com opção. Novas fontes `dsb-2018` e `dsb-2024`, com a taxonomia oficial de produtos FX do UPI.
+- Aplicada a 2ª rodada de decisões (CASH, FP, DACCR, DISEQ, KKF e duas regras no `_schema.md`). Validação do Claude concluída; commit e tag `base-v1-claude` (D37).
+- Aplicadas 9 decisões do usuário (COL, AM, CMP, KOKI, FE e regra de barreira no schema). Corrigidas duplicações em 5 notas causadas por uma nova execução do script. Checklists humanos gerados de novo (D36).
+
+## 2026-10-22
+
+- Validação do Claude concluída nos seis lotes. Aplicadas as correções verificadas dos lotes 2 a 6 em 39 notas; o BFW passou a ter 3 pernas, pelo collar extra do Wystup. Checklists humanos: 553 itens. 15 decisões do usuário pendentes (D35).
+- Criada a nota `COL` (Collar, fora do OVML), após varredura das fontes; ela tem o seu checklist próprio (lote 6), e o RR passou a apontar para ela. PF e SN ajustados. `checklist_citacoes.py` passou a aceitar faixas de deslocamento, por causa do Natenberg. Validação do Claude: lotes 2 e 5 concluídos, sem ✗ (D34).
+- Validação do Claude do lote 1 concluída por um agente independente: 124 ✅, 21 ◐, 1 ✗ e 9 ⚖ em 155 citações. Aplicadas 21 de 25 correções em 12 notas, mais o padrão "Fonte única" em 8 notas e a convenção EU no `_schema.md` (D33). Os checklists humanos 1 a 4 foram gerados de novo (482 itens, 45 inferências).
+- Validação dividida em `validacao/humana/` e `validacao/claude/` (D32). Os checklists humanos foram movidos, sem os avisos 🔎, e `checklist_citacoes.py` passou a gravar em `humana/`. A validação do lote 1 por um agente separado está em andamento.
+
 ## 2026-10-21
 
 - Segunda passada nas citações (Claude), antes da validação do usuário: 161 trechos das fontes e 99 do OVML conferidos, todos encontrados. Corrigida a citação do DOT (p. 55 → p. 40); 10 avisos 🔎 nos checklists. Resumo em `validacao/README.md`.

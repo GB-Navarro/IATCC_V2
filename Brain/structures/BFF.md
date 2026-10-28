@@ -22,10 +22,10 @@ ambigua_com: []
 | Informação | Valor | Fonte |
 |---|---|---|
 | Composição | forward em que o notional acumula a cada dia com fixing acima ou abaixo da taxa de fade (a barreira) | [ovml] |
-| Composição | um valor alavancado é vendido num strike fora do dinheiro para melhorar a taxa | [ovml] |
+| Composição | um valor alavancado pode ser vendido num strike fora do dinheiro para melhorar a taxa | [ovml] |
 | Payoff | acumulativo | [ovml] |
 
 ## Notas
 
-- Fonte única: OVML [ovml].
-- É parecido com o fade-in forward e com o boosted spot/forward do Wystup [wystup-2006, pp. 142, 165].
+- Fonte única para a definição: OVML. As fontes tratam só componentes ou estruturas parecidas [inferência: páginas indicadas para esta estrutura na cobertura de `fontes/README.md`].
+- É parecido com o fade-in forward, com o boosted spot/forward e com o accumulative forward do Wystup [wystup-2006, pp. 142, 156, 165].

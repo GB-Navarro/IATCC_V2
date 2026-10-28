@@ -22,7 +22,8 @@ ambigua_com: []
 
 | Informação | Valor | Fonte |
 |---|---|---|
-| Composição | compra das calls K1 e K3, venda de duas calls K2; só calls ou só puts | [ovml]; [hull-2015, pp. 262, 264] |
+| Composição | compra das calls K1 e K3, venda da call K2; só calls ou só puts | [ovml]; [hull-2015, pp. 262, 264] |
+| Composição | duas opções vendidas em K2 | [hull-2015, p. 264] |
 | Strikes | três; K2 no meio: K3 − K2 = K2 − K1 | [hull-2015, pp. 264, 270] |
 | Vencimento | o mesmo nas três pernas | [hull-2015, p. 265] |
 | Notional | 1:2:1 | [hull-2015, p. 264] |

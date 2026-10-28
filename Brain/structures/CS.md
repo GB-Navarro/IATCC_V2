@@ -25,6 +25,11 @@ ambigua_com: []
 | Strikes | o mesmo nas duas pernas | [ovml]; [hull-2015, p. 265]; [natenberg-1994, p. 148] |
 | Vencimento | diferentes (T1 < T2) | [ovml]; [hull-2015, p. 265] |
 | Notional | igual: uma opção de cada lado | [hull-2015, p. 265]; [natenberg-1994, p. 148] |
-| Moneyness | livre: strike próximo do preço corrente na visão neutra, acima na altista, abaixo na baixista | [hull-2015, p. 266]; [ovml] |
+| Moneyness | livre: strike próximo do preço corrente na visão neutra, acima na altista, abaixo na baixista | [hull-2015, p. 266] |
 | Instrumento | opções europeias | [hull-2015, p. 265] |
-| Sinônimo | horizontal spread; time spread | [ovml]; [natenberg-1994, p. 148] |
+| Sinônimo | horizontal spread | [ovml]; [natenberg-1994, p. 148] |
+| Sinônimo | time spread | [natenberg-1994, p. 148] |
+
+## Restrições
+
+- É usado em geral com visão neutra de mercado [ovml].

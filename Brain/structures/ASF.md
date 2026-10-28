@@ -27,5 +27,8 @@ ambigua_com: []
 
 ## Restrições
 
-- Forwards com strike flutuante na média harmônica aparecem no Wystup [wystup-2006, p. 132].
 - Notional na moeda doméstica ou média geométrica exigem volatilidade no apreçamento [ovml].
+
+## Notas
+
+- Forwards com strike flutuante na média harmônica aparecem no Wystup [wystup-2006, p. 132].

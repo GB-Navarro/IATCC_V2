@@ -1,6 +1,6 @@
 ---
 aliases: ["Range Forward"]
-composta_de: ["[[DNT]]"]
+composta_de: ["[[EU]]", "[[DNT]]"]
 variante_de: []
 flexivel: []
 # gerado pelo script — não editar
@@ -22,12 +22,13 @@ ambigua_com: []
 
 | Informação | Valor | Fonte |
 |---|---|---|
-| Composição | forward sintético no strike do pior caso (compra de call e venda de put) mais compra de um double-no-touch | [wystup-2006, p. 152] |
+| Composição | forward sintético no strike do pior caso mais compra de um double-no-touch | [wystup-2006, pp. 152, 324] |
+| Composição | forward sintético: compra de call e venda de put, mesmo strike e mesmo notional | [wystup-2006, p. 140] |
 | Strikes | o mesmo nas duas opções: o pior caso | [wystup-2006, p. 152] |
-| Vencimento | o mesmo em todas as pernas | [wystup-2006, p. 151] |
-| Notional | igual nas duas opções | [wystup-2006, p. 152, exemplo] |
+| Vencimento | o mesmo em todas as pernas | [inferência: uma única data de vencimento, com o intervalo verificado "at expiry", wystup-2006, p. 151] |
+| Notional | igual nas duas opções | [wystup-2006, p. 140] |
 | Notional | o pagamento do DNT (r) cobre a diferença entre pior e melhor caso | [inferência: wystup-2006, p. 152] |
-| Barreira | as do DNT: na versão básica, o intervalo é verificado só no vencimento; também há versão com barreiras americanas | [wystup-2006, pp. 151–152] |
+| Barreira | a tabela representa a versão com barreiras americanas (DNT); na versão básica, o intervalo só é verificado no vencimento, o que equivale a um DNT europeu | [wystup-2006, pp. 151–152, 324] |
 | Composta de | DNT, mais um forward sintético | [wystup-2006, p. 152] |
 
 ## Restrições
@@ -36,5 +37,5 @@ ambigua_com: []
 
 ## Notas
 
-- O Hull usa *range forward* para o collar (RR do OVML): "This is known as a short position in a range forward contract." [hull-2015, p. 370].
-- O Wystup chama a estrutura também de *bonus forward* [wystup-2006, p. 151], nome que no OVML designa outra estrutura ([[BFW]]) [ovml].
+- O Hull usa *range forward* para o par de opções (RR do OVML): "This is a long position in a range forward contract and the payoff is shown in Figure 17.1b." [hull-2015, p. 371].
+- O Wystup chama a estrutura também de *bonus forward* [wystup-2006, p. 151], nome que no OVML designa outra estrutura ([[BFW]]) [inferência: texto da Bloomberg do BFW + wystup-2006, p. 152].

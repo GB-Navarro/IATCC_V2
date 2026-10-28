@@ -1,7 +1,7 @@
 """Gera o checklist de validação de um lote: um item por citação, com a página do PDF.
 
 Uso: python scripts/checklist_citacoes.py <lote> <COD> [<COD> ...]
-Saída: validacao/lote-<lote>.md (não sobrescreve um checklist existente).
+Saída: validacao/humana/lote-<lote>.md (não sobrescreve um checklist existente).
 """
 
 import re
@@ -11,28 +11,36 @@ from pathlib import Path
 RAIZ = Path(__file__).resolve().parent.parent
 NOTAS = RAIZ / "Brain" / "structures"
 FONTES = RAIZ / "fontes" / "README.md"
-SAIDA = RAIZ / "validacao"
+SAIDA = RAIZ / "validacao" / "humana"
 
 CITACAO = re.compile(r"\[(ovml|inferência:[^\]]+|[a-z0-9-]+, pp?\. [^\]]+)\]")
 REF = re.compile(r"([a-z0-9-]+-\d{4}), pp?\. ([\d–, ]+)")
 
 
-def deslocamentos() -> dict[str, int]:
+def deslocamentos() -> dict[str, list[tuple[int, int]]]:
+    """Por fonte, lista de (página impressa inicial, deslocamento). Aceita "10" ou "10 · 9 a partir de p. 263"."""
     desl = {}
     for linha in FONTES.read_text(encoding="utf-8").splitlines():
         cols = [c.strip() for c in linha.split("|")]
-        if len(cols) > 5 and cols[1].startswith("`") and cols[4].isdigit():
-            desl[cols[1].strip("`")] = int(cols[4])
+        if len(cols) > 5 and cols[1].startswith("`") and re.match(r"\d+", cols[4]):
+            faixas = [(0, int(re.match(r"\d+", cols[4]).group()))]
+            faixas += [(int(p), int(d)) for d, p in re.findall(r"(\d+) a partir de p\. (\d+)", cols[4])]
+            desl[cols[1].strip("`")] = sorted(faixas)
     return desl
 
 
-def paginas_pdf(texto: str, desl: dict[str, int]) -> str:
+def deslocamento(faixas: list[tuple[int, int]], pagina: int) -> int:
+    return [d for inicio, d in faixas if pagina >= inicio][-1]
+
+
+def paginas_pdf(texto: str, desl: dict[str, list[tuple[int, int]]]) -> str:
     saida = []
     for chave, pags in REF.findall(texto):
         if chave not in desl:
             saida.append(f"{chave}: sem deslocamento")
             continue
-        convertidas = re.sub(r"\d+", lambda m: str(int(m.group()) + desl[chave]), pags.strip().rstrip(","))
+        f = desl[chave]
+        convertidas = re.sub(r"\d+", lambda m: str(int(m.group()) + deslocamento(f, int(m.group()))), pags.strip().rstrip(","))
         saida.append(f"{chave}: PDF {convertidas}")
     return "; ".join(saida)
 

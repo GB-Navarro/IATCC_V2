@@ -8,6 +8,8 @@
 
 ## Lista
 
+O deslocamento do Natenberg muda ao longo do escaneamento: é 10 até a p. 181 e 9 nas pp. 215–265 (conferidos pela imagem). O ponto de troca, entre as pp. 182 e 214, não foi localizado; citações nesse intervalo devem ser conferidas pela imagem.
+
 | Chave | Referência | Edição / ISBN | Página impressa = PDF − | Status |
 |---|---|---|---|---|
 | `wystup-2006` | Wystup, U. *FX Options and Structured Products*. Wiley. | 1ª ed., 2006 · 978-0-470-01145-4 | 19 | obtido |
@@ -17,7 +19,9 @@
 | `wystup-fxcol-2022` | Wystup, U. "KOAMKIEU and the Psychology of Derivatives in Private Banking". MathFinance FX Column. | 2022 · gratuito | 0 | lido |
 | `wystup-fxcol-2025` | Wystup, U. "KIKO Double-Touch, Parisian Options and Triangular Relationships". MathFinance FX Column. | 2025 · gratuito | 0 | obtido |
 | `wystup-fxcol-2026` | Wystup, U. "Sales Slide for the Shark Forward". MathFinance FX Column. | 2026 · gratuito (.docx) | — | obtido |
-| `natenberg-1994` | Natenberg, S. *Option Volatility & Pricing: Advanced Trading Strategies and Techniques*. McGraw-Hill/Irwin. | ed. revisada, 1994 · 1-55738-486-X | 10 | obtido (escaneado) |
+| `natenberg-1994` | Natenberg, S. *Option Volatility & Pricing: Advanced Trading Strategies and Techniques*. McGraw-Hill/Irwin. | ed. revisada, 1994 · 1-55738-486-X | 10 · 9 a partir de p. 215 | obtido (escaneado) |
+| `dsb-2018` | DSB Product Committee. *DSB Product Definitions – Annex 3 – FX*. Derivatives Service Bureau (ANNA DSB). | out. 2018 · gratuito (ISIN; matriz baseada na taxonomia ISDA 2.0) | 0 | obtido |
+| `dsb-2024` | Derivatives Service Bureau (ANNA DSB). *UPI Product Definitions – FOREIGN EXCHANGE* (planilha). | versão 9, 2026-08-07 (a chave ficou com o ano errado) · gratuito (UPI, usado no reporte à CFTC) | — (citar a aba) | obtido |
 | `wystup-2017` | Wystup, U. *FX Options and Structured Products*, 2ª ed. | 2017 | — | dispensado |
 | `clark-2011` | Clark, I. J. *Foreign Exchange Option Pricing*. | 2011 | — | dispensado |
 
@@ -78,10 +82,11 @@
 | SG | wystup-2006 p. 38 | ✓ |
 | CS, DS | hull-2015 pp. 265–266; natenberg-1994 pp. 148, 157 | ✓ |
 | PF | wystup-2006 p. 142 | ✓ |
+| COL (fora do OVML) | natenberg-1994 pp. 263–265 (fence); hull-2015 p. 599 (nomes do range forward); wystup-2006 p. 31 | ✓ |
 | CR | natenberg-1994 p. 158 | ✓ |
-| SDR, CASH, FP, BFW, TF | — | — |
-| EU, AM | hull-2015 cap. 10 e p. 369 | ✓ |
-| FX, FWD | hull-2015 p. 104; wystup-2006 p. 141 | ✓ |
+| SDR, CASH, FP, TF, EC | — | — |
+| EU, AM | hull-2015 pp. 9, 213; wystup-2006 pp. 3–4 | ✓ |
+| FX, FWD | hull-2015 pp. 6–7, 112–113; wystup-2006 pp. 135, 139–140 | ✓ |
 | KO, KI | wystup-2006 p. 40; hull-2015 p. 604; haug-2007 p. 152 | ✓ |
 | DKO, DKI | haug-2007 p. 156; wystup-2006 p. 40 | ✓ |
 | OT, NT, DOT, DNT | wystup-2006 p. 49; haug-2007 pp. 176, 180 | ✓ |
@@ -100,14 +105,14 @@
 | DACCR | wystup-2006 p. 101 | ~ |
 | ACCU | wystup-2006 p. 156 | ✓ |
 | ACCUKI, ACCUKO | wystup-2006 p. 156 | ~ |
-| FE | wystup-2006 pp. 144–145, 272; wystup-fxcol-2026 | ✓ |
+| FE | wystup-2006 pp. 144–145, 164, 273; wystup-fxcol-2026 | ✓ |
 | KOF | wystup-2006 p. 143 | ✓ |
 | RF | wystup-2006 p. 151 | ✓ |
 | FLEX | wystup-2006 p. 166 (time option) | ✓ |
 | BFF | wystup-2006 pp. 142 + 165 | ~ |
 | EF | wystup-2006 p. 163 (auto-renewal) | ~ |
-| EC | wystup-2006 p. 172 (collar extra) | ~ |
 | KKF | wystup-2006 p. 115 (KIKO) | ~ |
+| BFW | wystup-2006 pp. 161 (boomerang forward), 172–173 (collar extra) | ✓ |
 | 2L–10L | não precisam de fonte | |
 
 As estruturas marcadas com "—" têm nome comercial, sem definição acadêmica. A nota de cada uma registra "fonte única: OVML".

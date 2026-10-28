@@ -32,8 +32,9 @@ ambigua_com: []
 ## Restrições
 
 - Costuma ser montado a custo zero: o prêmio da put vendida paga o da call comprada [wystup-2006, p. 31]; [hull-2015, p. 371].
-- Em FX, o RR é cotado como a diferença entre a volatilidade da call de delta 0,25 e a da put de delta −0,25 [reiswich-wystup-2009, p. 13].
+- Em FX, o RR é cotado como a diferença entre a volatilidade da call e a da put com o mesmo delta em módulo; 0,25 é o caso usado como exemplo [reiswich-wystup-2009, pp. 12–13]. O mercado cota o delta 0,25, e outros deltas, como 0,10 e 0,35, também são cotados [wystup-2006, p. 22].
 
 ## Notas
 
-- O Hull chama esta estrutura de *range forward*: "This is a long position in a range forward contract and the payoff is shown in Figure 17.1b." [hull-2015, p. 371]. O RF do OVML é outra estrutura ([[RF]]) [wystup-2006, p. 151].
+- O nome Bloomberg desta estrutura é "Risk Reversal (Collar)" [ovml]. A versão com a posição protegida (fence) é outra nota, [[COL]] [natenberg-1994, p. 264].
+- O Hull chama esta estrutura de *range forward*: "This is a long position in a range forward contract and the payoff is shown in Figure 17.1b." [hull-2015, p. 371]. O RF do OVML é outra estrutura ([[RF]]): corresponde ao range forward do Wystup, um forward sintético mais um double-no-touch [wystup-2006, pp. 151–152]; [inferência: texto da Bloomberg do RF].

@@ -26,4 +26,4 @@ ambigua_com: []
 | Composição | digital que deixa de existir se o spot tocar a barreira; a tabela mostra a call | [ovml]; [wystup-2006, p. 105]; [haug-2007, p. 179] |
 | Barreira | ko, uma barreira | [ovml]; [haug-2007, p. 179] |
 | Payoff | digital | [ovml] |
-| Variante de | DIVA, com barreira knock-out | [ovml]; [wystup-2006, p. 105] |
+| Variante de | DIVA, com barreira knock-out | [inferência: comparação dos textos da Bloomberg do DIVA e do DIKO]; [wystup-2006, p. 105] |

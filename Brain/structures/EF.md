@@ -26,5 +26,5 @@ ambigua_com: []
 
 ## Notas
 
-- Fonte única: OVML [ovml].
-- O auto-renewal forward do Wystup, uma série de forwards renovada automaticamente, é parecido mas não igual [wystup-2006, p. 163].
+- Fonte única para a definição: OVML. As fontes tratam só componentes ou estruturas parecidas [inferência: páginas indicadas para esta estrutura na cobertura de `fontes/README.md`].
+- O auto-renewal forward do Wystup, uma série de forwards renovada automaticamente, é parecido mas não igual [wystup-2006, p. 163]; a renovação dele também depende de uma barreira [wystup-2006, p. 164].

@@ -24,3 +24,4 @@ ambigua_com: []
 | Composição | pagamento fixo no vencimento se o spot estiver acima (call) ou abaixo (put) do strike; a tabela mostra a call | [ovml]; [hull-2015, pp. 606–607] |
 | Payoff | digital | [ovml]; [hull-2015, pp. 606–607] |
 | Sinônimo | cash-or-nothing | [hull-2015, p. 606] |
+| Sinônimo | binary option | [haug-2007, p. 174] |

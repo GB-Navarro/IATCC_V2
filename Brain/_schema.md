@@ -6,8 +6,9 @@ Contrato entre as notas de `structures/`, o script gerador e o agente.
 
 - Uma nota por estrutura: `structures/<COD>.md` (ex.: `BF.md`), criada a partir de `_template.md`.
 - `structures/bloomberg_description/` é a fonte original: nunca é editada, só embutida.
+- Estruturas fora do OVML (ex.: `COL`) não têm embed nem citações `[ovml]`; a linha abaixo do título diz "Estrutura fora do OVML".
 - Nome completo e sinônimos ficam em `aliases`.
-- Seções vazias são omitidas. **Restrições**: só o que a tabela de pernas e a tabela de origem não expressam. **Notas**: só divergências da Bloomberg ou conflitos de nome.
+- Seções vazias são omitidas. **Restrições**: só o que a tabela de pernas e a tabela de origem não expressam. **Notas**: só divergências da Bloomberg, conflitos de nome e, quando for o caso, a linha "Fonte única para a definição: OVML".
 
 ## Citações
 
@@ -35,7 +36,7 @@ Toda afirmação da nota tem citação. A bibliografia fica em `fontes/README.md
 | `aliases` | humano | nome Bloomberg, sinônimos |
 | `composta_de` | humano | `[[COD]]` das subestruturas |
 | `variante_de` | humano | `[[COD]]` da estrutura-base |
-| `flexivel` | humano | `strike`, `vencimento`, `notional` |
+| `flexivel` | humano | `strike`, `vencimento`, `notional`: desliga as relações da tabela de pernas naquela coluna (igualdade e ordem dos símbolos; no notional, a razão) |
 | `barreira` | humano | `ki`, `ko`, `kiko` (ausente = sem barreira) |
 | `barreiras` | humano | `1`, `2` |
 | `payoff` | humano | `vanilla`, `digital`, `toque`, `acumulativo`, `media`, `composto`, `linear` |
@@ -44,7 +45,7 @@ Toda afirmação da nota tem citação. A bibliografia fica em `fontes/README.md
 | `instrumentos` | script | `[[COD]]` da coluna instrumento |
 | `ambigua_com` | script | `[[COD]]` |
 
-`barreira`, `barreiras` e `payoff` só existem em notas de 1 perna.
+`barreira`, `barreiras` e `payoff` só existem em notas de 1 perna. Intervalos de contagem de fixings (FA, ACCR, DACCR) não são barreira.
 
 ## Pernas
 
@@ -63,6 +64,7 @@ Toda afirmação da nota tem citação. A bibliografia fica em `fontes/README.md
 - A tabela descreve uma única forma: a versão long da Bloomberg. Variantes implícitas, que não viram notas:
   - **short**: inverter todos os lados;
   - **espelho**: trocar call ↔ put e inverter a ordem dos strikes.
+- Combinações de vanillas usam `EU` por convenção. A vanilla americana (`AM`) só aparece como estrutura de uma perna.
 - Nota de 1 perna usa o próprio código como instrumento.
 - Genéricas (2L–10L) não têm tabela; o nº de pernas vem do código.
 

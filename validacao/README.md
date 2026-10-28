@@ -1,38 +1,62 @@
 # Validação
 
-Um checklist por lote. Cada afirmação das notas aparece uma vez, com as fontes como sub-itens marcáveis.
+Duas validações independentes da base (D32):
 
-| Lote | Estruturas | Itens | Inferências (⚠) |
-|---|---|---|---|
-| [1](lote-1.md) | combinações de vanillas (12) | 155 | 9 |
-| [2](lote-2.md) | vanillas e não-opções (5) | 29 | 1 |
-| [3](lote-3.md) | exóticos de 1 perna (23) | 164 | 10 |
-| [4](lote-4.md) | compostas e forwards estruturados (16) | 115 | 12 |
-| [5](lote-5.md) | genéricas 2L–10L (9) | 9 | 0 |
-| | **total** | **472** | **32** |
+| Validação | Pasta | Quem | Quando | Estado |
+|---|---|---|---|---|
+| Claude | [`claude/`](claude/) | agente separado, sem o contexto da conversa que escreveu as notas | agora; o MVP usa a base validada por ela (tag `base-v1-claude`) | concluída: seis lotes validados e corrigidos, decisões do usuário aplicadas (D36, D37); tag `base-v1-claude` |
+| Humana | [`humana/`](humana/) | o usuário | depois do MVP (tag `base-v2-humana`) | 0 de 553 |
 
-## Segunda passada (Claude, 2026-10-21)
+**Separação:** os checklists humanos não mostram os vereditos do Claude, para que a validação humana seja feita às cegas. Ao final, as duas são comparadas.
 
-Feita antes da sua validação, sem marcar nenhum `[x]`.
+**Correções:** quando a validação do Claude encontra um erro, a nota é corrigida, o item recebe o veredito ✎ em `claude/` e as seções afetadas de `humana/` são geradas de novo.
 
-- **Fontes:** 161 trechos procurados nas 73 páginas com texto. Todos estão nas páginas citadas; 2 só apareceram depois de desfazer a hifenização da quebra de linha. As 3 páginas do Natenberg (escaneado) foram conferidas pela imagem.
-- **OVML:** 99 trechos procurados nos textos da Bloomberg das 65 estruturas; todos encontrados.
-- **Correção:** no DOT, a citação `wystup-2006, p. 55` passou a `p. 40`, onde está a definição. A nota e o checklist foram corrigidos.
-- **10 avisos 🔎** logo abaixo dos sub-itens que merecem atenção:
-  - 7 em que a fonte sustenta só parte da afirmação da linha; a outra parte vem de outra fonte da mesma linha (CP, RR, SN, PF, CS, SG, BFC);
-  - 2 de apoio indireto (DS e FE);
-  - 1 de correção (DOT).
+## Lotes
 
-A passada não substitui a sua conferência: sou eu revisando o meu próprio trabalho. Ela verifica se o trecho está na página, não se a interpretação está certa.
+| Lote | Estruturas | Itens | Inferências (⚠) | Humana | Claude |
+|---|---|---|---|---|---|
+| 1 | combinações de vanillas (12) | 170 | 15 | [lote-1](humana/lote-1.md) | [lote-1](claude/lote-1.md): 124 ✅ · 21 ◐ · 1 ✗ · 9 ⚖ |
+| 2 | vanillas e não-opções (5) | 34 | 3 | [lote-2](humana/lote-2.md) | [lote-2](claude/lote-2.md): 20 ✅ · 7 ◐ · 0 ✗ · 2 ⚖ |
+| 3 | exóticos de 1 perna (23) | 178 | 18 | [lote-3](humana/lote-3.md) | [lote-3](claude/lote-3.md): 131 ✅ · 20 ◐ · 2 ✗ · 11 ⚖ |
+| 4 | compostas e forwards estruturados (16) | 131 | 27 | [lote-4](humana/lote-4.md) | [lote-4](claude/lote-4.md): 77 ✅ · 20 ◐ · 2 ✗ · 16 ⚖ |
+| 5 | genéricas 2L–10L (9) | 9 | 0 | [lote-5](humana/lote-5.md) | [lote-5](claude/lote-5.md): 9 ✅ |
+| 6 | fora do OVML: COL (1) | 31 | 7 | [lote-6](humana/lote-6.md) | [lote-6](claude/lote-6.md): 10 ✅ · 5 ◐ · 0 ✗ · 5 ⚖ (+ 5 itens do lote 1) |
+| | **total** | **553** | **70** | | |
 
-## Como validar
+Os números de itens e inferências mudam quando a validação do Claude divide ou corrige linhas. Os vereditos do Claude valem para as notas antes das correções; o status de cada correção está no topo de cada relatório.
+
+## Validação de decisões
+
+Agentes independentes conferem uma decisão antes que ela seja implementada.
+
+| Decisão | Relatórios | Resultado |
+|---|---|---|
+| D38: pastas por categoria e pernas | [taxonomia UPI](claude/d38-taxonomia.md), [literatura](claude/d38-literatura.md), [dados do DTCC](claude/d38-dados.md) | 1 ✅ (FP) · 6 ◐ · 1 ✗ (critério da categoria pelo produto UPI); ajustes aguardam o usuário |
+
+Os scripts citados nos relatórios ficaram fora do projeto (D38, item 9).
+
+## Validação humana: como fazer
 
 1. Abra a fonte na página do PDF indicada no item. Os arquivos estão em `fontes/`.
 2. Confira se a página sustenta a afirmação:
    - **`[chave, p. N]`:** a definição da fonte diz isso;
    - **`[chave, p. N, exemplo]`:** um exemplo numérico mostra isso;
    - **`[ovml]`:** o texto da Bloomberg, embutido no topo da nota, diz isso;
-   - **⚠:** a conclusão é minha; confira as premissas.
+   - **⚠:** a conclusão é do Claude; confira as premissas.
 3. Marque `[x]` se estiver certo. Se estiver errado, deixe desmarcado e escreva logo abaixo `- ❌ motivo`.
 
-Comece pelos **Pontos de atenção** no topo de cada lote.
+Comece pelos **Pontos de atenção** no topo de cada lote. Para não se ancorar, não leia `claude/` antes de terminar.
+
+## Validação do Claude: vereditos
+
+| Veredito | Significado |
+|---|---|
+| ✅ | sustentada: a página diz isso |
+| ◐ | parcial: sustenta só parte, ou só por contexto |
+| ✗ | não sustentada: a página não diz isso, ou diz outra coisa |
+| ⚖ | julgamento: inferência ou decisão, avaliada pela lógica |
+| ✎ | corrigida: estava errada e a nota foi corrigida |
+
+## Histórico
+
+- **2026-10-21, segunda passada (Claude, na conversa que escreveu as notas):** verificou só se os trechos estão nas páginas citadas (161 das fontes e 99 do OVML, todos encontrados). Corrigiu a citação do DOT (p. 55 → p. 40). Não substitui nenhuma das duas validações.
